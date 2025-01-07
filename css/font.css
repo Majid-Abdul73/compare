@@ -1,0 +1,972 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		6;
+	dw-num-cols-tablet:		10;
+	dw-num-cols-desktop:	14;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+	
+
+    body::-webkit-scrollbar-track
+    {	width: 20px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+        background-color:;
+        margin-right: 5%;
+    }
+
+    body::-webkit-scrollbar
+    {
+
+    width: 2px;
+
+
+    }
+
+    body::-webkit-scrollbar-thumb
+    {
+        background-color: #46525B;
+
+    }
+
+    
+    
+    
+    
+    #mobialone{
+    display: none;
+    background-color: #6B6B6B;
+}
+
+    
+    
+    hr{
+        margin: .5em 0;
+        background-color: #C6A772;
+    }
+    
+    
+    
+h1{
+        text-align: left;
+        font-size: 4em;
+        font-family: "Recline-Regular";
+        margin-top: 5vh;
+        color: #46525B;
+        opacity: 1;
+        clear: both;
+        display: block;
+       font-weight: 100;
+        line-height: 1em;
+        margin: .3em auto;
+    position: relative;
+    }
+    
+    
+    
+    h1 span{
+        color: #634E42;
+    }
+    
+    
+    
+    h2{
+     font-size: 3em;
+        font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+        font-weight: 100;
+        line-height: .9em;
+        margin: 0;
+        position: relative;
+    }
+    
+    
+
+    
+    h3{
+        font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+        font-size: 2em;
+        display: block;
+        clear: both;
+        margin: .5em auto;
+        line-height: 1em;
+        font-weight: 600;
+        margin: 0;
+        position: relative;
+    }
+    
+    
+    
+    h4{
+        font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+        font-size: 1.6em;
+        display: block;
+        clear: both;
+        font-weight: 500;
+        margin: 0;
+        line-height: 1em;
+        position: relative;
+    }
+    
+    
+    
+    
+    
+    h5 {
+        font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+        font-size: 1.25em;
+        display: block;
+        clear: both;
+        font-weight: 600;
+        margin: 0;
+        line-height: 1em;
+        margin-bottom: .5em;
+        font-weight: 100;
+        position: relative;
+    }
+    
+    h6 {
+        font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+        font-size: 1.1em;
+        font-weight: 600;
+        display: block;
+        clear: both;
+        margin: 1em 0;
+        color: #06AEBC;
+        position: relative;
+    }
+    
+    
+    
+
+    
+    p{
+        font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+        line-height: 1.3em;
+        font-size: 1em;
+        margin: 0;
+        letter-spacing: .3px;
+        font-size: .9em;
+        position: relative;
+    }
+    
+    
+        
+    
+    
+    
+    
+    button{
+        border: 0;
+        padding: .75em 1em;
+        border-radius: 2em;
+        display: block;
+        float: left;
+        clear: none;
+        cursor: pointer;
+        font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+        color: #46525B;
+        font-size: 1em;
+        font-weight: 600;
+        padding: 1em 1.7em;
+        /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+        background-color: white;
+    }
+    
+
+    
+    
+    button i{
+        margin-left: .5em;
+        transition: all .2s;
+        font-size: 0;
+    }
+    
+
+    
+    button:hover i{
+        margin-left: .7em;
+        display: block;
+        visibility: visible;
+        font-size: 1.2em;
+    }
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+	
+	
+	
+	
+	
+	
+	
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+	
+	
+	
+}
+
+
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+
+    
+    
+    
+    
+    
+    body::-webkit-scrollbar-track
+    {	width: 20px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+        background-color:;
+        margin-right: 5%;
+    }
+
+    body::-webkit-scrollbar
+    {
+
+    width: 2px;
+
+
+    }
+
+    body::-webkit-scrollbar-thumb
+    {
+        background-color: #46525B;
+
+    }
+
+    
+    
+    
+    
+    #mobialone{
+    display: none;
+    background-color: #6B6B6B;
+}
+
+    
+    
+    hr{
+        margin: .5em 0;
+        background-color: #C6A772;
+    }
+    
+    
+    
+h1{
+        text-align: left;
+        font-size: 9em;
+        font-family: "Recline-Regular";
+        margin-top: 5vh;
+        color: #46525B;
+        opacity: 1;
+        clear: both;
+        display: block;
+       font-weight: 100;
+    line-height: .9em;
+    margin: .3em auto;
+    }
+    
+    
+    
+    h1 span{
+        color: #634E42;
+    }
+    
+    
+    
+    h2{
+     font-size: 3.5em;
+        font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+        font-weight: 100;
+        line-height: 1em;
+        margin: 0;
+    }
+    
+    
+
+    
+    h3{
+        font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+        font-size: 3em;
+        display: block;
+        clear: both;
+        margin: .5em auto;
+        line-height: 1em;
+        font-weight: 600;
+        margin: 0;
+    }
+    
+    
+    
+    h4{
+        font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+        font-size: 2em;
+        display: block;
+        clear: both;
+        font-weight: 500;
+        margin: 0;
+        line-height: 1em;
+    }
+    
+    
+    
+    
+    
+    h5 {
+        font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+        font-size: 1.5em;
+        display: block;
+        clear: both;
+        font-weight: 600;
+        margin: 0;
+        line-height: 1em;
+        margin-bottom: .5em;
+        font-weight: 100;
+    }
+    
+    h6 {
+        font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+        font-size: 1.3em;
+        font-weight: 600;
+        display: block;
+        clear: both;
+        margin: 1em 0;
+        color: #06AEBC;
+    }
+    
+    
+    
+
+    
+    p{
+    
+        font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+        line-height: 1.3em;
+        font-size: 1em;
+        margin: 0;
+        letter-spacing: .3px;
+        font-size: .9em
+    }
+    
+    
+        
+    
+    
+    
+    
+    button{
+        border: 0;
+        padding: .8em 1em;
+        border-radius: 2em;
+        display: block;
+        float: left;
+        clear: none;
+        cursor: pointer;
+        font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+        color: #46525B;
+        font-size: 1em;
+        font-weight: 600;
+        padding: 1em 1.7em;
+        /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+        background-color: white;
+    }
+    
+
+    
+    
+    button i{
+        margin-left: .5em;
+        transition: all .2s;
+        font-size: 0;
+    }
+    
+
+    
+    button:hover i{
+        margin-left: .7em;
+        display: block;
+        visibility: visible;
+        font-size: 1.2em;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+    /* Desktop Layout: 769px to a max of 1080px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1080px) {
+	
+    
+    
+    
+    
+    
+    body::-webkit-scrollbar-track
+    {	width: 20px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+        background-color:;
+        margin-right: 5%;
+    }
+
+    body::-webkit-scrollbar
+    {
+
+    width: 2px;
+
+
+    }
+
+    body::-webkit-scrollbar-thumb
+    {
+        background-color: #46525B;
+
+    }
+
+    
+    
+    
+    
+    #mobialone{
+    display: none;
+    background-color: #6B6B6B;
+}
+
+    
+    
+    hr{
+        margin: .5em 0;
+        background-color: #C6A772;
+    }
+    
+    
+    
+h1{
+        text-align: left;
+        font-size: 6em;
+        font-family: "Recline-Regular";
+        margin-top: 5vh;
+        color: #46525B;
+        opacity: 1;
+        clear: both;
+        display: block;
+       font-weight: 100;
+    line-height: 1em;
+    margin: .3em auto;
+    }
+    
+    
+    
+    h1 span{
+        color: #634E42;
+    }
+    
+    
+    
+    h2{
+     font-size: 3.5em;
+        font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+        font-weight: 100;
+        line-height: 1em;
+        margin: 0;
+    }
+    
+    
+
+    
+    h3{
+        font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+        font-size: 2em;
+        display: block;
+        clear: both;
+        margin: .5em auto;
+        line-height: 1em;
+        font-weight: 600;
+        margin: 0;
+    }
+    
+    
+    
+    h4{
+        font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+        font-size: 1.5em;
+        display: block;
+        clear: both;
+        font-weight: 500;
+        margin: 0;
+        line-height: 1em;
+    }
+    
+    
+    
+    
+    
+    h5 {
+        font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+        font-size: 1.15em;
+        display: block;
+        clear: both;
+        font-weight: 600;
+        margin: 0;
+        line-height: 1em;
+        margin-bottom: .5em;
+        font-weight: 100;
+    }
+    
+    h6 {
+        font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+        font-size: 1em;
+        font-weight: 600;
+        display: block;
+        clear: both;
+        margin: 1em 0;
+        color: #06AEBC;
+    }
+    
+    
+    
+
+    
+    p{
+        font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+        line-height: 1.3em;
+        font-size: 1em;
+        margin: 0;
+        letter-spacing: .3px;
+    }
+    
+    
+        
+    
+    
+    
+    
+    button{
+        border: 0;
+        padding: .8em 1em;
+        border-radius: 2em;
+        display: block;
+        float: left;
+        clear: none;
+        cursor: pointer;
+        font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+        color: #46525B;
+        font-size: .9em;
+        font-weight: 600;
+        padding: 1em 1.7em;
+        /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+        background-color: white;
+    }
+    
+
+    
+    
+    button i{
+        margin-left: .5em;
+        transition: all .2s;
+        font-size: 0;
+    }
+    
+
+    
+    button:hover i{
+        margin-left: .7em;
+        display: block;
+        visibility: visible;
+        font-size: 1.2em;
+    }
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+}
+    
+    
+    /* Desktop Layout:1080px to a max of 1440px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+
+@media only screen and (min-width: 1440px) {
+    
+	
+    
+    body::-webkit-scrollbar-track
+    {	width: 20px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+        background-color:;
+        margin-right: 5%;
+    }
+
+    body::-webkit-scrollbar
+    {
+
+    width: 2px;
+
+
+    }
+
+    body::-webkit-scrollbar-thumb
+    {
+        background-color: #46525B;
+
+    }
+
+    
+    
+    
+    
+    #mobialone{
+    display: none;
+    background-color: #6B6B6B;
+}
+
+    
+    
+    hr{
+        margin: .5em 0;
+        background-color: #C6A772;
+    }
+    
+    
+    
+h1{
+        text-align: left;
+        font-size: 9em;
+        font-family: "Recline-Regular";
+        margin-top: 5vh;
+        color: #46525B;
+        opacity: 1;
+        clear: both;
+        display: block;
+       font-weight: 100;
+    line-height: .9em;
+    margin: .3em auto;
+    }
+    
+    
+    
+    h1 span{
+        color: #634E42;
+    }
+    
+    
+    
+    h2{
+     font-size: 4.5em;
+        font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+        font-weight: 100;
+        line-height: 1em;
+        margin: 0;
+    }
+    
+    
+
+    
+    h3{
+        font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+        font-size: 3em;
+        display: block;
+        clear: both;
+        margin: .5em auto;
+        line-height: 1em;
+        font-weight: 600;
+        margin: 0;
+    }
+    
+    
+    
+    h4{
+        font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+        font-size: 2em;
+        display: block;
+        clear: both;
+        font-weight: 500;
+        margin: 0;
+        line-height: 1em;
+    }
+    
+    
+    
+    
+    
+    h5 {
+        font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+        font-size: 1.5em;
+        display: block;
+        clear: both;
+        font-weight: 600;
+        margin: 0;
+        line-height: 1em;
+        margin-bottom: .5em;
+        font-weight: 100;
+    }
+    
+    h6 {
+        font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+        font-size: 1.3em;
+        font-weight: 600;
+        display: block;
+        clear: both;
+        margin: 1em 0;
+        color: #06AEBC;
+    }
+    
+    
+    
+
+    
+    p{
+    
+        font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+        line-height: 1.3em;
+        font-size: 1.1em;
+        margin: 0;
+        letter-spacing: .3px;
+    }
+    
+    
+        
+    
+    
+    
+    
+    button{
+        border: 0;
+        padding: 1em 1.5em;
+        border-radius: 2em;
+        display: block;
+        float: left;
+        clear: none;
+        cursor: pointer;
+        font-family: "Quicksand", sans-serif;
+       font-optical-sizing: auto;
+        color: #46525B;
+        font-size: 1.1em;
+        font-weight: 600;
+        padding: 1em 1.7em;
+        /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+        background-color: white;
+    }
+    
+
+    
+    
+    button i{
+        margin-left: .5em;
+        transition: all .2s;
+        font-size: 0;
+    }
+    
+
+    
+    button:hover i{
+        margin-left: .7em;
+        display: block;
+        visibility: visible;
+        font-size: 1.2em;
+    }
+    
+    
+
+    
+
+
+    
+    
+    
+    
+    
+    
+}
+    
+
+/* Desktop Layout: 1440px to a max of 1920px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1920px) {
+	
+    body{
+        background-color: #fffffff;
+        font-size: .9em;
+    }
+    
+    
+    #mobialone{
+    display: none;
+    }
+    
+    
+    
+}
+
+/* Desktop Layout: 1920px to a max of 2400px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 2400px) {
+	
+    body{
+        background-color: #ECECEC;
+        font-size: 1.1em;
+    }
+    
+
+}

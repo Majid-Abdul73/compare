@@ -1,0 +1,1884 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		6;
+	dw-num-cols-tablet:		10;
+	dw-num-cols-desktop:	14;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+
+    
+    
+    
+    
+        .euphratesvideo{
+        height: 90vh;
+        width: 100vw;
+        float: left;
+        clear: both;
+        background-color: #46525B;
+        display: block;
+        position: fixed;
+        z-index: 0;
+        transition: all .3s;
+    }
+    
+    
+    
+    .ev-showvideo{
+        top: 0;
+        left: 0;
+        opacity: 1;
+    }
+    
+    
+    
+    
+    .ev-novideo{
+        opacity: 0;
+        top: 0vh;
+        left: 0;
+    }
+    
+    
+    
+    .agencybody{
+        position: absolute;
+        top: 80vh;
+        left: 0;
+        float: left;
+        clear: none;
+        display: block;
+        z-index: 100;
+                /* From https://css.glass */
+background: rgba(255, 255, 255, 0.8);
+box-shadow: 0 15px 30px rgba(5, 214, 208, .2);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+border: 0px solid rgba(255, 255, 255, 0.97);
+        border-radius: 2em;
+        transition: all .5s ease;
+    }
+    
+    
+    
+    
+    .agencynone{
+                        /* From https://css.glass */
+background: rgba(255, 255, 255, 0);
+box-shadow: 0 15px 30px rgba(5, 214, 208, 0);
+backdrop-filter: blur(3px);
+-webkit-backdrop-filter: blur(3px);
+border: 0px solid rgba(255, 255, 255, 0.97);
+        border-radius: 0em;
+    }
+    
+	
+   
+    
+    .agency-container{
+        width: 85%;
+        height: auto;
+        display: block;
+        float: left;
+        margin: 10vh 7.5% 0;
+        padding: 0;
+        
+    }
+    
+    
+    
+    
+    .ac-top{
+        display: block;
+        float: left;
+        clear: none;
+        color: #46525B;
+        width: 90%;
+        color: #46525B;
+    }
+    
+    
+    .ac-top h2{
+        font-size: 4em;
+        font-weight: 600;
+        line-height: .9em;
+        margin: auto auto .4em;
+        width: 90%;
+        float: left;
+        clear: both;
+        
+    }
+    
+    .ac-top p{
+        clear: both;
+        width: 100%;
+    }
+    
+    
+    
+    
+    .agency-container .watchshowreel{
+        margin: 0vh 10% 0 0;
+    }
+    
+    
+    .a-quote{
+        margin: 5em auto;
+        clear: both;
+        display: block;
+        float: left;
+        width: 100%;
+        color: #46525B;
+    }
+
+
+    .a-quote h1{
+        font-size: 3.8em;
+    }
+
+    .a-quote h3{
+        line-height: 1.1em;
+        margin-bottom: 1em;
+        width: 80%;
+    }
+    
+    
+    .a-quote h5{
+        font-weight: 300;
+    }
+    
+    
+    
+    
+    
+    
+    .a-slide{
+        width: 100vw;
+        height: 60vh;
+        background-color: #46525B;
+        display: block;
+        clear: both;
+        float: left;
+        margin: 5em -7.5vw auto;
+    }
+    
+    
+    
+    .agency-container .h-line{
+        height: 20vh;
+        width: 1px;
+        float: left;
+        clear: both;
+        margin: 3vh calc(5% + .5%);
+        background-color: #46525B;
+    }
+    
+    
+    
+    
+    .mv{
+        display: block;
+        float: left;
+        clear: none;
+        margin: auto 5% 5em auto;
+        width: 90%;
+        height: auto;
+    }
+  
+    
+    .mv h3{
+        margin-bottom: .5em;
+        color: #46525B;
+    }
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    .team-container{
+        width: 85%;
+        height: auto;
+        display: block;
+        float: left;
+        margin: 25vh 7.5% 0;
+        padding: 0;
+        
+    }
+    
+    
+    
+    
+    .tc-top{
+        display: block;
+        float: left;
+        clear: none;
+        color: #46525B;
+        width: 80%;
+        color: #46525B;
+        margin-bottom: 5em;
+    }
+    
+    
+    .tc-top h2{
+        font-size: 4em;
+        font-weight: 600;
+        line-height: .9em;
+        margin: auto auto .4em;
+        width: 70%;
+        float: left;
+        clear: both;
+        
+    }
+    
+    .tc-top p{
+        clear: both;
+        width: 100%;
+    }
+    
+    
+    
+    
+    .team-container .watchshowreel{
+        margin: 5vh 10% 0 0;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .team{
+        width: 100%;
+        height: auto;
+        clear: both;
+        float: left;
+        display: block; 
+      grid-auto-columns: 1fr; 
+      grid-template-columns: 1fr 1fr; 
+      grid-template-rows: 1fr 1fr; 
+      gap: 2em 2em; 
+      grid-template-areas: 
+        ". ."
+        ". ."; 
+        margin: 5em auto;
+    }
+    
+    
+    
+    
+    .member{
+        position: relative;
+        width: 100%;
+        height: 70vh;
+        border-radius: 1em;
+        display: block;
+        float: left;
+        clear: none;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    
+    
+    .member-circle{
+        width: 20em;
+        height: 20em;
+        border-radius: 10em;
+        background: rgb(5,214,208);
+background: -webkit-linear-gradient(43deg, rgba(5,214,208,0) 0%, rgba(7,184,209,0.8995973389355743) 90%);
+background: -o-linear-gradient(43deg, rgba(5,214,208,0) 0%, rgba(7,184,209,0.8995973389355743) 90%);
+background: linear-gradient(133deg, rgba(5,214,208,0) 0%, rgba(7,184,209,0.8995973389355743) 90%);
+        position: absolute;
+        z-index: 0;
+        top: 25%;
+        left: calc(50% - 10em);
+        transition: all .2s;
+    }
+    
+    
+    
+    .namemarquee{
+        color: #07B8D1;
+        position: absolute;
+        top: 20%;
+        opacity: .3;
+        opacity: 0;
+        
+    }
+    
+    
+
+    
+    
+    
+    .member-pic{
+        width: 100%;
+        height: 85%;
+        display: block;
+        float: left;
+        clear: none;
+        position: absolute;
+        z-index: 10;
+        background-size:cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        border-radius: 1em;
+        transition: all .2s;
+        transition-delay: .1s;
+        overflow: hidden;
+    }
+    
+    
+    
+    
+    
+    .member-details{
+        width: 90%;
+        height: calc(20% - 1em);
+        display: block;
+        float: left;
+        clear: none;
+        position: absolute;
+        z-index: 20;
+        bottom: 0;
+        left: 0;
+        padding: 1em 5%;
+        background-color: white;
+    }
+    
+    
+    .member-details p{
+        margin: .5em auto;
+    }
+    
+    
+    .member-social-ico{
+        display: block;
+        float: left;
+        clear: both;
+        height: auto;
+        width: auto;
+        transition: all;
+        opacity: 0;
+        margin: 2em auto auto auto;
+    }
+    
+    
+    .member-social-ico i{
+        padding: 1em;
+        cursor: pointer;
+        transition: all .3s;
+        transform-origin: center;
+        font-size: 1em;
+        cursor: pointer;
+    }
+    
+    
+    .member-social-ico i:hover{
+        font-size: 1em;
+        border-radius: 1em;
+        background-color: #EEEEEE;
+    }
+    
+    
+    
+    
+    .member:hover .member-circle{
+        width: 100%;
+        height: 100%;
+        border-radius: 0em;
+        top: 0;
+        left: 0;
+    }
+    
+    .member:hover .member-pic{
+        top: 3%;
+        opacity: 1;
+        border-radius: 1em;
+    }
+    
+    
+    .member:hover .member-social-ico{
+        margin: 0em auto auto auto;
+        opacity: 1;
+        transition: all .2s;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+	
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+	
+	
+	
+
+
+    
+    
+        .team-container .watchshowreel{
+        margin: 5vh 10% 0 0;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+	
+
+	
+	
+	
+}
+
+
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+    
+    
+    
+    
+    
+    
+    
+    
+    .euphratesvideo{
+        height: 90vh;
+        width: 100vw;
+        float: left;
+        clear: both;
+        background-color: #46525B;
+        display: block;
+        position: fixed;
+        z-index: 0;
+        transition: all .3s;
+    }
+    
+    
+    
+    .ev-showvideo{
+        top: 0;
+        left: 0;
+        opacity: 1;
+    }
+    
+    
+    
+    
+    .ev-novideo{
+        opacity: 0;
+        top: 0vh;
+        left: 0;
+    }
+    
+    
+    
+    .agencybody{
+        position: absolute;
+        top: 80vh;
+        left: 0;
+        float: left;
+        clear: none;
+        display: block;
+        z-index: 100;
+                /* From https://css.glass */
+background: rgba(255, 255, 255, 0.8);
+box-shadow: 0 15px 30px rgba(5, 214, 208, .2);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+border: 0px solid rgba(255, 255, 255, 0.97);
+        border-radius: 2em;
+        transition: all .5s ease;
+    }
+    
+    
+    
+    
+    .agencynone{
+                        /* From https://css.glass */
+background: rgba(255, 255, 255, 0);
+box-shadow: 0 15px 30px rgba(5, 214, 208, 0);
+backdrop-filter: blur(3px);
+-webkit-backdrop-filter: blur(3px);
+border: 0px solid rgba(255, 255, 255, 0.97);
+        border-radius: 0em;
+    }
+    
+	
+   
+    
+    .agency-container{
+        width: 85%;
+        height: auto;
+        display: block;
+        float: left;
+        margin: 10vh 7.5% 0;
+        padding: 0;
+        
+    }
+    
+    
+    
+    
+    .ac-top{
+        display: block;
+        float: left;
+        clear: none;
+        color: #46525B;
+        width: 90%;
+        color: #46525B;
+    }
+    
+    
+    .ac-top h2{
+        font-size: 4em;
+        font-weight: 600;
+        line-height: .9em;
+        margin: auto auto .4em;
+        width: 90%;
+        float: left;
+        clear: both;
+        
+    }
+    
+    .ac-top p{
+        clear: both;
+        width: 100%;
+    }
+    
+    
+    
+    
+    .agency-container .watchshowreel{
+        margin: 0vh 10% 0 0;
+    }
+    
+    
+    .a-quote{
+        margin: 5em auto;
+        clear: both;
+        display: block;
+        float: left;
+        width: 100%;
+        color: #46525B;
+    }
+
+
+    .a-quote h1{
+        font-size: 3.8em;
+    }
+
+    .a-quote h3{
+        line-height: 1.1em;
+        margin-bottom: 1em;
+        width: 80%;
+    }
+    
+    
+    .a-quote h5{
+        font-weight: 300;
+    }
+    
+    
+    
+    
+    
+    
+    .a-slide{
+        width: 100vw;
+        height: 60vh;
+        background-color: #46525B;
+        display: block;
+        clear: both;
+        float: left;
+        margin: 5em -7.5vw auto;
+    }
+    
+    
+    
+    .agency-container .h-line{
+        height: 20vh;
+        width: 1px;
+        float: left;
+        clear: both;
+        margin: 3vh calc(5% + .5%);
+        background-color: #46525B;
+    }
+    
+    
+    
+    
+    .mv{
+        display: block;
+        float: left;
+        clear: none;
+        margin: auto 5% 5em auto;
+        width: 90%;
+        height: auto;
+    }
+  
+    
+    .mv h3{
+        margin-bottom: .5em;
+        color: #46525B;
+    }
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    .team-container{
+        width: 85%;
+        height: auto;
+        display: block;
+        float: left;
+        margin: 15vh 7.5% 0;
+        padding: 0;
+        
+    }
+    
+    
+    
+    
+    .tc-top{
+        display: block;
+        float: left;
+        clear: none;
+        color: #46525B;
+        width: 60%;
+        color: #46525B;
+        margin-bottom: 5em;
+    }
+    
+    
+    .tc-top h2{
+        font-size: 4em;
+        font-weight: 600;
+        line-height: .9em;
+        margin: auto auto .4em;
+        width: 60%;
+        float: left;
+        clear: both;
+        
+    }
+    
+    .tc-top p{
+        clear: both;
+        width: 100%;
+    }
+    
+    
+    
+    
+    .team-container .watchshowreel{
+        margin: 0vh 10% 0 0;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .team{
+        width: 100%;
+        height: auto;
+        clear: both;
+        float: left;
+        display: grid; 
+      grid-auto-columns: 1fr; 
+      grid-template-columns: 1fr 1fr; 
+      grid-template-rows: 1fr 1fr; 
+      gap: 2em 2em; 
+      grid-template-areas: 
+        ". ."
+        ". ."; 
+        margin: 5em auto;
+    }
+    
+    
+    
+    
+    .member{
+        position: relative;
+        width: 100%;
+        height: 70vh;
+        border-radius: 1em;
+        display: block;
+        float: left;
+        clear: none;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    
+    
+    .member-circle{
+        width: 20em;
+        height: 20em;
+        border-radius: 10em;
+        background: rgb(5,214,208);
+background: -webkit-linear-gradient(43deg, rgba(5,214,208,0) 0%, rgba(7,184,209,0.8995973389355743) 90%);
+background: -o-linear-gradient(43deg, rgba(5,214,208,0) 0%, rgba(7,184,209,0.8995973389355743) 90%);
+background: linear-gradient(133deg, rgba(5,214,208,0) 0%, rgba(7,184,209,0.8995973389355743) 90%);
+        position: absolute;
+        z-index: 0;
+        top: 25%;
+        left: calc(50% - 10em);
+        transition: all .2s;
+    }
+    
+    
+    
+    .namemarquee{
+        color: #07B8D1;
+        position: absolute;
+        top: 20%;
+        opacity: .3;
+        opacity: 0;
+        
+    }
+    
+    
+
+    
+    
+    
+    .member-pic{
+        width: 100%;
+        height: 85%;
+        display: block;
+        float: left;
+        clear: none;
+        position: absolute;
+        z-index: 10;
+        background-size:cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        border-radius: 1em;
+        transition: all .2s;
+        transition-delay: .1s;
+        overflow: hidden;
+    }
+    
+    
+    
+    
+    
+    .member-details{
+        width: 90%;
+        height: calc(20% - 1em);
+        display: block;
+        float: left;
+        clear: none;
+        position: absolute;
+        z-index: 20;
+        bottom: 0;
+        left: 0;
+        padding: 1em 5%;
+        background-color: white;
+    }
+    
+    
+    .member-details p{
+        margin: .5em auto;
+    }
+    
+    
+    .member-social-ico{
+        display: block;
+        float: left;
+        clear: both;
+        height: auto;
+        width: auto;
+        transition: all;
+        opacity: 0;
+        margin: 2em auto auto auto;
+    }
+    
+    
+    .member-social-ico i{
+        padding: 1em;
+        cursor: pointer;
+        transition: all .3s;
+        transform-origin: center;
+        font-size: 1em;
+        cursor: pointer;
+    }
+    
+    
+    .member-social-ico i:hover{
+        font-size: 1em;
+        border-radius: 1em;
+        background-color: #EEEEEE;
+    }
+    
+    
+    
+    
+    .member:hover .member-circle{
+        width: 100%;
+        height: 100%;
+        border-radius: 0em;
+        top: 0;
+        left: 0;
+    }
+    
+    .member:hover .member-pic{
+        top: 3%;
+        opacity: 1;
+        border-radius: 1em;
+    }
+    
+    
+    .member:hover .member-social-ico{
+        margin: 0em auto auto auto;
+        opacity: 1;
+        transition: all .2s;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+    /* Desktop Layout: 769px to a max of 1080px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1080px) {
+	
+    
+    
+    
+    
+    
+    
+    
+        .euphratesvideo{
+        height: 90vh;
+        width: 100vw;
+        float: left;
+        clear: both;
+        background-color: #46525B;
+        display: block;
+        position: fixed;
+        z-index: 0;
+        transition: all .3s;
+    }
+    
+    
+    
+    .ev-showvideo{
+        top: 0;
+        left: 0;
+        opacity: 1;
+    }
+    
+    
+    
+    
+    .ev-novideo{
+        opacity: 0;
+        top: 0vh;
+        left: 0;
+    }
+    
+    
+    
+    .agencybody{
+        position: absolute;
+        top: 80vh;
+        left: 0;
+        float: left;
+        clear: none;
+        display: block;
+        z-index: 100;
+                /* From https://css.glass */
+background: rgba(255, 255, 255, 0.8);
+box-shadow: 0 15px 30px rgba(5, 214, 208, .2);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+border: 0px solid rgba(255, 255, 255, 0.97);
+        border-radius: 2em;
+        transition: all .5s ease;
+    }
+    
+    
+    
+    
+    .agencynone{
+                        /* From https://css.glass */
+background: rgba(255, 255, 255, 0);
+box-shadow: 0 15px 30px rgba(5, 214, 208, 0);
+backdrop-filter: blur(3px);
+-webkit-backdrop-filter: blur(3px);
+border: 0px solid rgba(255, 255, 255, 0.97);
+        border-radius: 0em;
+    }
+    
+	
+   
+    
+    .agency-container{
+        width: 85%;
+        height: auto;
+        display: block;
+        float: left;
+        margin: 10vh 7.5% 0;
+        padding: 0;
+        
+    }
+    
+    
+    
+    
+    .ac-top{
+        display: block;
+        float: left;
+        clear: none;
+        color: #46525B;
+        width: 60%;
+        color: #46525B;
+    }
+    
+    
+        .a-quote h1{
+        font-size: 8em;
+    }
+
+    
+    
+    .ac-top h2{
+        font-size: 7em;
+        font-weight: 600;
+        line-height: .9em;
+        margin: auto auto .4em;
+        width: 70%;
+        float: left;
+        clear: both;
+        
+    }
+    
+    .ac-top p{
+        clear: both;
+        width: 100%;
+    }
+    
+    
+    
+    
+    .agency-container .watchshowreel{
+        margin: 0vh 10% 0 0;
+    }
+    
+    
+    .a-quote{
+        margin: 5em auto;
+        clear: both;
+        display: block;
+        float: left;
+        width: 100%;
+        color: #46525B;
+    }
+    
+    .a-quote h3{
+        line-height: 1.1em;
+        margin-bottom: 1em;
+        width: 80%;
+    }
+    
+    
+    .a-quote h5{
+        font-weight: 300;
+    }
+    
+    
+    
+    
+    
+    
+    .a-slide{
+        width: 100vw;
+        height: 60vh;
+        background-color: #46525B;
+        display: block;
+        clear: both;
+        float: left;
+        margin: 5em -7.5vw auto;
+    }
+    
+    
+    
+    .agency-container .h-line{
+        height: 20vh;
+        width: 1px;
+        float: left;
+        clear: both;
+        margin: 5vh calc(5% + .5%);
+        background-color: #46525B;
+    }
+    
+    
+    
+    
+    .mv{
+        display: block;
+        float: left;
+        clear: none;
+        margin: auto 5% 5em auto;
+        width: 40%;
+        height: auto;
+    }
+  
+    
+    .mv h3{
+        margin-bottom: .5em;
+        color: #46525B;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    .team-container{
+        width: 85%;
+        height: auto;
+        display: block;
+        float: left;
+        margin: 25vh 7.5% 0;
+        padding: 0;
+        
+    }
+    
+    
+    
+    
+    .tc-top{
+        display: block;
+        float: left;
+        clear: none;
+        color: #46525B;
+        width: 60%;
+        color: #46525B;
+        margin-bottom: 5em;
+    }
+    
+    
+    .tc-top h2{
+        font-size: 7em;
+        font-weight: 600;
+        line-height: .9em;
+        margin: auto auto .4em;
+        width: 70%;
+        float: left;
+        clear: both;
+        
+    }
+    
+    .tc-top p{
+        clear: both;
+        width: 100%;
+    }
+    
+    
+    
+    
+    .team-container .watchshowreel{
+        margin: 0vh 10% 0 0;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .team{
+        width: 80%;
+        height: auto;
+        clear: both;
+        float: left;
+        display: grid; 
+      grid-auto-columns: 1fr; 
+      grid-template-columns: 1fr 1fr 1fr; 
+      grid-template-rows: 1fr 1fr; 
+      gap: 2em 2em; 
+      grid-template-areas: 
+        ". . ."
+        ". . ."; 
+        margin: 5em auto;
+    }
+    
+    
+    
+    
+    .member{
+        position: relative;
+        width: 100%;
+        height: 70vh;
+        border-radius: 1em;
+        display: block;
+        float: left;
+        clear: none;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    
+    
+    .member-circle{
+        width: 20em;
+        height: 20em;
+        border-radius: 10em;
+        background: rgb(5,214,208);
+background: -webkit-linear-gradient(43deg, rgba(5,214,208,0) 0%, rgba(7,184,209,0.8995973389355743) 90%);
+background: -o-linear-gradient(43deg, rgba(5,214,208,0) 0%, rgba(7,184,209,0.8995973389355743) 90%);
+background: linear-gradient(133deg, rgba(5,214,208,0) 0%, rgba(7,184,209,0.8995973389355743) 90%);
+        position: absolute;
+        z-index: 0;
+        top: 25%;
+        left: calc(50% - 10em);
+        transition: all .2s;
+    }
+    
+    
+    
+    .namemarquee{
+        color: #07B8D1;
+        position: absolute;
+        top: 20%;
+        opacity: .3;
+        opacity: 0;
+        
+    }
+    
+    
+
+    
+    
+    
+    .member-pic{
+        width: 100%;
+        height: 85%;
+        display: block;
+        float: left;
+        clear: none;
+        position: absolute;
+        z-index: 10;
+        background-size:cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        border-radius: 1em;
+        transition: all .2s;
+        transition-delay: .1s;
+        overflow: hidden;
+    }
+    
+    
+    
+    
+    
+    .member-details{
+        width: 90%;
+        height: calc(20% - 1em);
+        display: block;
+        float: left;
+        clear: none;
+        position: absolute;
+        z-index: 20;
+        bottom: 0;
+        left: 0;
+        padding: 1em 5%;
+        background-color: white;
+    }
+    
+    
+    .member-details p{
+        margin: .5em auto;
+    }
+    
+    
+    .member-social-ico{
+        display: block;
+        float: left;
+        clear: both;
+        height: auto;
+        width: auto;
+        transition: all;
+        opacity: 0;
+        margin: 2em auto auto auto;
+    }
+    
+    
+    .member-social-ico i{
+        padding: 1em;
+        cursor: pointer;
+        transition: all .3s;
+        transform-origin: center;
+        font-size: 1em;
+        cursor: pointer;
+    }
+    
+    
+    .member-social-ico i:hover{
+        font-size: 1em;
+        border-radius: 1em;
+        background-color: #EEEEEE;
+    }
+    
+    
+    
+    
+    .member:hover .member-circle{
+        width: 100%;
+        height: 100%;
+        border-radius: 0em;
+        top: 0;
+        left: 0;
+    }
+    
+    .member:hover .member-pic{
+        top: 3%;
+        opacity: 1;
+        border-radius: 1em;
+    }
+    
+    
+    .member:hover .member-social-ico{
+        margin: 0em auto auto auto;
+        opacity: 1;
+        transition: all .2s;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+}
+    
+
+
+
+
+
+
+
+
+
+
+    
+    /* Desktop Layout:1080px to a max of 1440px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1440px) {
+    
+    
+    
+    
+        .euphratesvideo{
+        height: 90vh;
+        width: 100vw;
+        float: left;
+        clear: both;
+        background-color: #46525B;
+        display: block;
+        position: fixed;
+        z-index: 0;
+        transition: all .3s;
+    }
+    
+    
+    
+    .ev-showvideo{
+        top: 0;
+        left: 0;
+        opacity: 1;
+    }
+    
+    
+    
+    
+    .ev-novideo{
+        opacity: 0;
+        top: 0vh;
+        left: 0;
+    }
+    
+    
+    
+    .agencybody{
+        position: absolute;
+        top: 80vh;
+        left: 0;
+        float: left;
+        clear: none;
+        display: block;
+        z-index: 100;
+                /* From https://css.glass */
+background: rgba(255, 255, 255, 0.8);
+box-shadow: 0 15px 30px rgba(5, 214, 208, .2);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+border: 0px solid rgba(255, 255, 255, 0.97);
+        border-radius: 2em;
+        transition: all .5s ease;
+    }
+    
+    
+    
+    
+    .agencynone{
+                        /* From https://css.glass */
+background: rgba(255, 255, 255, 0);
+box-shadow: 0 15px 30px rgba(5, 214, 208, 0);
+backdrop-filter: blur(3px);
+-webkit-backdrop-filter: blur(3px);
+border: 0px solid rgba(255, 255, 255, 0.97);
+        border-radius: 0em;
+    }
+    
+	
+   
+    
+    .agency-container{
+        width: 85%;
+        height: auto;
+        display: block;
+        float: left;
+        margin: 10vh 7.5% 0;
+        padding: 0;
+        
+    }
+    
+    
+    
+    
+    .ac-top{
+        display: block;
+        float: left;
+        clear: none;
+        color: #46525B;
+        width: 60%;
+        color: #46525B;
+    }
+    
+    
+    .ac-top h2{
+        font-size: 7em;
+        font-weight: 600;
+        line-height: .9em;
+        margin: auto auto .4em;
+        width: 70%;
+        float: left;
+        clear: both;
+        
+    }
+    
+    .ac-top p{
+        clear: both;
+        width: 100%;
+    }
+    
+    
+    
+    
+    .agency-container .watchshowreel{
+        margin: 0vh 10% 0 0;
+    }
+    
+    
+    .a-quote{
+        margin: 5em auto;
+        clear: both;
+        display: block;
+        float: left;
+        width: 100%;
+        color: #46525B;
+    }
+    
+    .a-quote h3{
+        line-height: 1.1em;
+        margin-bottom: 1em;
+        width: 80%;
+    }
+    
+    
+    .a-quote h5{
+        font-weight: 300;
+    }
+    
+    
+    
+    
+    
+    
+    .a-slide{
+        width: 100vw;
+        height: 60vh;
+        background-color: #46525B;
+        display: block;
+        clear: both;
+        float: left;
+        margin: 5em -7.5vw auto;
+    }
+    
+    
+    
+    .agency-container .h-line{
+        height: 20vh;
+        width: 1px;
+        float: left;
+        clear: both;
+        margin: 5vh calc(5% + .5%);
+        background-color: #46525B;
+    }
+    
+    
+    
+    
+    .mv{
+        display: block;
+        float: left;
+        clear: none;
+        margin: auto 5% 5em auto;
+        width: 40%;
+        height: auto;
+    }
+  
+    
+    .mv h3{
+        margin-bottom: .5em;
+        color: #46525B;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    .team-container{
+        width: 85%;
+        height: auto;
+        display: block;
+        float: left;
+        margin: 25vh 7.5% 0;
+        padding: 0;
+        
+    }
+    
+    
+    
+    
+    .tc-top{
+        display: block;
+        float: left;
+        clear: none;
+        color: #46525B;
+        width: 60%;
+        color: #46525B;
+        margin-bottom: 5em;
+    }
+    
+    
+    .tc-top h2{
+        font-size: 7em;
+        font-weight: 600;
+        line-height: .9em;
+        margin: auto auto .4em;
+        width: 70%;
+        float: left;
+        clear: both;
+        
+    }
+    
+    .tc-top p{
+        clear: both;
+        width: 100%;
+    }
+    
+    
+    
+    
+    .team-container .watchshowreel{
+        margin: 0vh 10% 0 0;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .team{
+        width: 80%;
+        height: auto;
+        clear: both;
+        float: left;
+        display: grid; 
+      grid-auto-columns: 1fr; 
+      grid-template-columns: 1fr 1fr 1fr; 
+      grid-template-rows: 1fr 1fr; 
+      gap: 2em 2em; 
+      grid-template-areas: 
+        ". . ."
+        ". . ."; 
+        margin: 5em auto;
+    }
+    
+    
+    
+    
+    .member{
+        position: relative;
+        width: 100%;
+        height: 70vh;
+        border-radius: 1em;
+        display: block;
+        float: left;
+        clear: none;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    
+    
+    .member-circle{
+        width: 20em;
+        height: 20em;
+        border-radius: 10em;
+        background: rgb(5,214,208);
+background: -webkit-linear-gradient(43deg, rgba(5,214,208,0) 0%, rgba(7,184,209,0.8995973389355743) 90%);
+background: -o-linear-gradient(43deg, rgba(5,214,208,0) 0%, rgba(7,184,209,0.8995973389355743) 90%);
+background: linear-gradient(133deg, rgba(5,214,208,0) 0%, rgba(7,184,209,0.8995973389355743) 90%);
+        position: absolute;
+        z-index: 0;
+        top: 25%;
+        left: calc(50% - 10em);
+        transition: all .2s;
+    }
+    
+    
+    
+    .namemarquee{
+        color: #07B8D1;
+        position: absolute;
+        top: 20%;
+        opacity: .3;
+        opacity: 0;
+        
+    }
+    
+    
+
+    
+    
+    
+    .member-pic{
+        width: 100%;
+        height: 85%;
+        display: block;
+        float: left;
+        clear: none;
+        position: absolute;
+        z-index: 10;
+        background-size:cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        border-radius: 1em;
+        transition: all .2s;
+        transition-delay: .1s;
+        overflow: hidden;
+    }
+    
+    
+    
+    
+    
+    .member-details{
+        width: 90%;
+        height: calc(20% - 1em);
+        display: block;
+        float: left;
+        clear: none;
+        position: absolute;
+        z-index: 20;
+        bottom: 0;
+        left: 0;
+        padding: 1em 5%;
+        background-color: white;
+    }
+    
+    
+    .member-details p{
+        margin: .5em auto;
+    }
+    
+    
+    .member-social-ico{
+        display: block;
+        float: left;
+        clear: both;
+        height: auto;
+        width: auto;
+        transition: all;
+        opacity: 0;
+        margin: 2em auto auto auto;
+    }
+    
+    
+    .member-social-ico i{
+        padding: 1em;
+        cursor: pointer;
+        transition: all .3s;
+        transform-origin: center;
+        font-size: 1em;
+        cursor: pointer;
+    }
+    
+    
+    .member-social-ico i:hover{
+        font-size: 1em;
+        border-radius: 1em;
+        background-color: #EEEEEE;
+    }
+    
+    
+    
+    
+    .member:hover .member-circle{
+        width: 100%;
+        height: 100%;
+        border-radius: 0em;
+        top: 0;
+        left: 0;
+    }
+    
+    .member:hover .member-pic{
+        top: 3%;
+        opacity: 1;
+        border-radius: 1em;
+    }
+    
+    
+    .member:hover .member-social-ico{
+        margin: 0em auto auto auto;
+        opacity: 1;
+        transition: all .2s;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+    
+        /* Desktop Layout: 1440px to a max of 1920px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1920px) {
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+
+            /* Desktop Layout: 1920px to a max of 2400px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 2400px) {
+	
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+		
+}

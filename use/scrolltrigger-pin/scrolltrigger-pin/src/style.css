@@ -1,0 +1,36 @@
+#main_wrapper {
+  overflow-x: hidden;
+  width: 50%
+}
+
+section {
+  width: 100%;
+  height: 200px;
+  background: #ccc;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+section.fancy {
+  background: cyan;
+}
+
+section.fancy .container {
+    width: calc(300%);
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+   font-size: 3em;
+}
+
+section.fancy .panel {
+    width: 100%;
+    height: 100%; 
+}
+
+
+section .animate {
+  width: 100px;
+  height: 100px;
+  background: red;
+}

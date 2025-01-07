@@ -1,0 +1,97 @@
+/* content */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+#amazingcarousel-1 .amazingcarousel-image {	
+	position: relative;
+	padding: 0px;
+}
+
+#amazingcarousel-1{
+	position: absolute;
+	z-index:50;
+	background-color:rgba(49, 26, 54, 1);
+}
+
+#amazingcarousel-1 .amazingcarousel-image img {
+	display: block;
+	width: 100vw;
+	max-width: 100%;
+
+	margin: 0;
+	padding: 0;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+
+}
+
+#amazingcarousel-1 .amazingcarousel-title {
+	position:relative;
+
+
+	text-align:left;
+
+	overflow: hidden;
+}
+
+#amazingcarousel-1 .amazingcarousel-description {
+	position:relative;
+	font: 12px 'Open Sans', sans-serif;
+	color:#333333;
+
+	text-align:left;
+	line-height: 14px;		
+	height: 28px;
+	overflow: hidden;
+}
+
+/* carousel */
+
+#amazingcarousel-container-1 {
+
+}
+
+#amazingcarousel-1 .amazingcarousel-list-container { 
+	padding: 0;
+}
+
+/* item */
+
+#amazingcarousel-1 .amazingcarousel-item-container {
+	text-align: center;
+	padding: 0px;
+}
+
+/* arrows */
+
+#amazingcarousel-1 .amazingcarousel-prev {
+	right: 5%;
+	bottom: 12%;
+	margin-left: -16px;
+	margin-bottom: 36px;
+	position:absolute;
+	z-index:500;
+}
+
+#amazingcarousel-1 .amazingcarousel-next {
+	right: 5%;
+	bottom: 5%;
+	margin-left: -16px;
+	margin-bottom: 36px;
+	position:absolute;
+	z-index:500;
+}
+
+
+/* navigation bullets */
+
+#amazingcarousel-1 .amazingcarousel-nav {
+	position: absolute;
+	top: 0%;
+	left: 100%;
+}
+
+#amazingcarousel-1 .amazingcarousel-bullet-wrapper {
+
+}
+

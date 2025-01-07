@@ -1,0 +1,1909 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		6;
+	dw-num-cols-tablet:		10;
+	dw-num-cols-desktop:	14;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+
+    
+    
+     .pagename-sus{
+        background-color: #024F49;
+    }
+
+    
+    
+    .ot-head{
+        width: 100%;
+        height: auto;
+        min-height: 50vh;
+        display: block;
+        float: left;
+        clear: none;
+        margin: 0 0 10vh 0;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    
+    
+    
+    .tech-top-bg{
+        background-image: url("../img/serverroom.png");
+    }
+    
+    
+    
+    .ot-head .oth-inner{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        float: left;
+        clear: none;
+        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,.2) 100%);
+        z-index: 0;
+    }
+
+    
+    
+    .oth-inner-sus{
+         position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        float: left;
+        clear: none;
+        z-index: 0;
+        background: linear-gradient(90deg, rgba(2,79,73,1) 0%, rgba(2,79,73,.2) 100%);
+    }
+    
+    
+    
+    
+    .oth-left{
+        width: 100%;
+        display: block;
+        float: left;
+        clear: none;
+    }
+    
+    
+    
+    .oth-inner h2{
+        color: #fff;
+        border:none;
+        display: block;
+        float: left;
+        clear: both;
+        margin: 25vh 5vw 2vh;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 4em;
+    }
+    
+    
+    
+    .oth-inner h3{
+        color: #fff;
+        border:none;
+        display: block;
+        float: left;
+        clear: both;
+        margin: 5vh 5vw 2vh;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.7em;
+        font-weight: 700;
+
+    }
+    
+    
+    .oth-inner p{
+        color: white;
+        display: block;
+        float: left;
+        clear: both;
+        margin: auto 5vw 10vh;
+    }
+    
+    
+    .redstroke{
+        background-color: #E00000;
+        height: .2em;
+        width: 15em;
+        display: block;
+        float: left;
+        clear: both;
+        border: 0;
+        margin: 0vh 5vw 2vh;
+    }
+    
+    
+    
+    
+    .ot-down{
+        width: calc(90% - 4em);
+        display: block;
+        float: left;
+        clear: none;
+        height: auto;
+        padding: 2em;
+        background-color: white;
+        margin: -13vh 5% 10vh;
+        border-radius: .5em;
+        z-index: 10;
+        position: relative;
+        line-height: 2em;
+    }
+    
+    b{
+        font-weight: bold;
+        line-height: 2em;
+    }
+    
+    
+    
+    .ot-down .redstroke,.ot-floatright .redstroke{
+        float: left;
+        margin-left: 0;
+    }
+    
+    
+    .otd-left{
+        width: 100%;
+        float: left;
+        clear: none;
+        display: block;
+        margin: 0 auto 5em;
+        height: auto;
+    }
+    
+    
+    
+    .otd-right{
+        width: calc(100% - 0em);
+        float: right;
+        clear: none;
+        display: block;
+        margin: 0;
+        padding: 0em;
+        line-height: 1.5em;
+    }
+
+
+
+.otd-r-d{
+        width: calc(100% - 2em);
+         display: block; 
+
+    }
+    
+    
+    
+    .otd-r-d-div{
+        display: block;
+        padding: 1.5em;
+        height: auto;
+        border: 1px solid;
+        border-color: darkgray;
+        line-height: 1.5em;
+        width: 100%;
+            margin: 2em auto;
+    }
+    
+    .otd-r-d-div #base{
+        font-size: .8em;
+        letter-spacing: 1px;
+        opacity: .7;
+    }
+    
+    
+    .otd-r-d-div h4{
+        margin-top: 1em;
+    }
+    
+    
+    
+    
+    .ot-floatright{
+        position:relative;
+        width: calc(100% - 7em);
+        display: block;
+        float: left;
+        clear: both;
+        background-color: white;
+        right: auto;
+        left: 5%;
+        top: auto;
+        z-index: 100;
+        margin-top: -15vh ;
+        padding: 2em 2em 15em;
+        overflow: hidden;
+        height: auto;
+        margin-bottom: 20vh;
+    }
+    
+    
+    .ot-floatright h3{
+        font-weight: 700;
+    }
+    
+    
+    
+    .ot-floatright .big-o-red{
+        position: absolute;
+        bottom: -15em;
+        right: -10em;
+        height: 25em;
+    }
+    
+    
+    
+    
+    
+    .certification{
+        width: 90%;
+        height: auto;
+        display: block;
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .container-certification{
+        width: 100%;
+        height: 100%;
+             display: grid; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 2em 2em; 
+  grid-template-areas: 
+    ". ."
+    ". ."
+    ". ."; 
+        clear: none;;
+        float: left;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
+    .contactus-container{
+        width: 90%;
+        height: auto;
+        display: block;
+        float: left;
+        clear: none;
+        margin: -10em 5% 10em;
+        position: relative;
+        z-index: 10;
+    }
+    
+    
+    
+    .cc-left{
+          display: grid; 
+      grid-auto-rows: 1fr; 
+      grid-template-columns: 1fr; 
+      grid-template-rows: 1fr 1fr 1fr; 
+      gap: 2em 2em; 
+      grid-template-areas: 
+        "."
+        "."
+        "."; 
+        width: 100%;
+        height: auto;
+        float: left;
+        clear: none;
+        margin: 0;
+    }
+    
+    
+    
+    .ccl{
+        background-color: white;
+        height: 20vh;
+        width: calc(100% - 4em);
+        display: block;
+        float: left;
+        clear: none;
+        padding: 2em;
+        cursor: pointer;
+        font-size: .9em;
+    }
+    
+    
+    .ccl i{
+        font-size: 2em;
+        margin: .5em 0em;
+        color: #E00000;
+    }
+    
+    .ccl span{
+        font-size: .6em;
+        font-weight: 300;
+    }
+    
+    
+    .cc-right{
+        display: block;
+        float: right;
+        clear: both;
+        width: 100%;
+        height: 100vh;
+        margin: 2em 0;
+        background-color: white;
+        overflow-y: scroll;
+    }
+    
+    
+
+
+
+    
+    .pdfread{
+         width: 90%;
+        height: auto;
+        display: block;
+        clear: none;
+    }
+    
+    
+    
+    .pdfread object{
+        width: 100%;
+        height: 80vh;
+    }
+    
+    
+    .pplogos{
+         width: 90%;
+        height: 60vh;
+        float: left;
+        clear: none;
+        top: auto;
+        position: relative;
+       display: grid; 
+      grid-auto-rows: 1fr; 
+      grid-template-columns: 1fr 1fr; 
+      grid-template-rows: 1fr; 
+      gap: 0em 2em; 
+      grid-template-areas: 
+        ". ."; 
+        padding: 2em;
+        background-color: white;
+        margin: auto auto auto 5%;
+    }
+    
+    
+    .pplogos img{
+        height: auto;
+        width: auto;
+        display: block;
+        clear: none;
+        margin: 1em auto;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .areasofservice{
+        width: 90%;
+        height: auto;
+        float: left;
+        clear: none;
+        background: none;
+       display: block;
+       margin: 10vh 5% 5vh;
+    }
+    
+    
+    .areasofservice h3{
+        font-weight: 700;    
+    }
+    
+    
+    
+    .aos-arranged{
+        display: grid; 
+      grid-auto-rows: 1fr; 
+      grid-template-columns: 1fr; 
+      gap: 2em 2em; 
+        margin: 5vh auto 0;
+        width: 100%;
+        height: auto;
+    }
+    
+    
+    
+    
+    .areasofservice .aos{
+        height: calc(35vh - 6em);
+        display: block;
+        float: left;
+        clear: none;
+        background-color: white;
+        position: relative;
+        padding: 3em;
+        width: calc(100% - 6em)
+    }
+    
+    
+    
+    .aos i{
+        font-size: 5em;
+        margin: .5em;
+        color: #E00000;
+    }
+
+
+  .aos img{
+        height: 5em;
+        clear: both;
+        display: block;
+        float: left;
+        margin: 1em 1em 2em;
+    }
+    
+    
+    .aos h4{
+        color: black;
+        font-size: 1.5em;
+    }
+    
+    
+    
+    .workdifferent{
+        width: 90%;
+        height: auto;
+        float: left;
+        clear: none;
+        background: none;
+       display: block;
+       margin: 10vh 5% 25vh;
+        position: relative;
+
+    }
+ 
+    
+    
+    .wd-right{
+        width: 100%;
+        height: auto;
+        display: block;
+        float: left;
+        clear: none;
+        background-color: white;
+        position: relative;
+        z-index: 0;
+              /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+        padding-bottom: 5vh;
+    }
+    
+    
+
+    
+    
+    
+    .wdr{
+        width: 80%;
+        height: auto;
+        display: block;
+        float: right;
+    }
+    
+    
+    .wdr p{
+        clear: both;
+        font-family: 'Montserrat', sans-serif;
+        display: block;
+    }
+    
+    
+    .wdr .redstroke{
+        margin-left: 0;
+        float: left;
+    }
+    
+    
+    .wdr ul{
+        width: 100%;
+        height: auto;
+        display: block;
+        clear: both;
+        
+    }
+    
+    .wdr ul li{
+        list-style: none;
+        font-family: 'Montserrat', sans-serif;
+        border: solid 1px;
+        line-height: 1em;
+        display: block;
+        clear: none;
+        padding: 1em 0em;
+        border-width: 0 0 1px 0px;
+    }
+    
+    .wdr li span{
+        font-weight: 500;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+	
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+	
+	
+	
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+	
+
+	
+	
+	
+}
+
+
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+    /* Desktop Layout: 769px to a max of 1080px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1080px) {
+	
+  
+     .pagename-sus{
+        background-color: #024F49;
+    }
+
+    
+    
+    .ot-head{
+        width: 100%;
+        height: auto;
+        min-height: 50vh;
+        display: block;
+        float: left;
+        clear: none;
+        margin: 0 0 10vh 0;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    
+    
+    
+    .tech-top-bg{
+        background-image: url("../img/serverroom.png");
+    }
+    
+    
+    
+    .ot-head .oth-inner{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        float: left;
+        clear: none;
+        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,.2) 100%);
+        z-index: 0;
+    }
+
+    
+    
+    .oth-inner-sus{
+         position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        float: left;
+        clear: none;
+        z-index: 0;
+        background: linear-gradient(90deg, rgba(2,79,73,1) 0%, rgba(2,79,73,.2) 100%);
+    }
+    
+    
+    
+    
+    .oth-left{
+        width: 55%;
+        display: block;
+        float: left;
+        clear: none;
+    }
+    
+    
+    
+    .oth-inner h2{
+        color: #fff;
+        border:none;
+        display: block;
+        float: left;
+        clear: both;
+        margin: 25vh 5vw 2vh;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 4em;
+    }
+    
+    
+    
+    .oth-inner h3{
+        color: #fff;
+        border:none;
+        display: block;
+        float: left;
+        clear: both;
+        margin: 5vh 5vw 2vh;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.7em;
+        font-weight: 700;
+
+    }
+    
+    
+    .oth-inner p{
+        color: white;
+        display: block;
+        float: left;
+        clear: both;
+        margin: auto 5vw 10vh;
+    }
+    
+    
+    .redstroke{
+        background-color: #E00000;
+        height: .2em;
+        width: 15em;
+        display: block;
+        float: left;
+        clear: both;
+        border: 0;
+        margin: 0vh 5vw 2vh;
+    }
+    
+    
+    
+    
+    .ot-down{
+        width: calc(90% - 4em);
+        display: block;
+        float: left;
+        clear: none;
+        height: auto;
+        padding: 2em;
+        background-color: white;
+        margin: -13vh 5% 10vh;
+        border-radius: .5em;
+        z-index: 10;
+        position: relative;
+        line-height: 2em;
+    }
+    
+    b{
+        font-weight: bold;
+        line-height: 2em;
+    }
+    
+    
+    
+    .ot-down .redstroke,.ot-floatright .redstroke{
+        float: left;
+        margin-left: 0;
+    }
+    
+    
+    .otd-left{
+        width: 20%;
+        float: left;
+        clear: none;
+        display: block;
+        margin: 0;
+    }
+    
+    
+    
+    .otd-right{
+        width: calc(80% - 4em);
+        float: right;
+        clear: none;
+        display: block;
+        margin: 0;
+        padding: 2em;
+        line-height: 1.5em;
+    }
+    
+    
+      .otd-r-d{
+        width: 100%;
+         display: grid; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 2em 2em; 
+  grid-template-areas: 
+    ". . ."; 
+        clear: both;
+        height: auto;
+    }
+    
+    
+    
+    .otd-r-d-div{
+        display: block;
+        padding: 1.5em;
+        height: auto;
+        border: 1px solid;
+        border-color: darkgray;
+        line-height: 1.5em;
+        width: calc(100% - 3em);
+        margin: 0em auto;
+    }
+    
+    .otd-r-d-div #base{
+        font-size: .8em;
+        letter-spacing: 1px;
+        opacity: .7;
+    }
+    
+    
+    .otd-r-d-div h4{
+        margin-top: 1em;
+    }
+    
+    
+    
+    
+    
+    .ot-floatright{
+        position:sticky;
+        width: 30%;
+        display: block;
+        float: right;
+        clear: both;
+        background-color: white;
+        right: 5%;
+        left: auto;
+        top: 15vh;
+        z-index: 100;
+        margin-top: -45vh ;
+        padding: 4em 4em 5em;
+        overflow: hidden;
+        height: 50vh;
+        margin-bottom: 10vh;
+    }
+    
+    
+    .ot-floatright h3{
+        font-weight: 700;
+    }
+    
+    
+    
+    .ot-floatright .big-o-red{
+        position: absolute;
+        bottom: -10em;
+        right: -10em;
+        height: 25em;
+    }
+    
+    
+    
+    
+    
+    .certification{
+        width: 90%;
+        height: auto;
+        display: block;
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    .container-certification{
+        width: 100%;
+        height: auto;
+          display: block; 
+        clear: none;;
+        float: left;
+   -webkit-column-count: 6;
+  -webkit-column-gap:   5em;
+  -moz-column-count:    6;
+  -moz-column-gap:      5em;
+  column-count:         6;
+  column-gap:           5em;  
+}
+
+
+.container-certification img{
+	width: 100% !important;
+  height: auto !important;
+	opacity:1;
+	float:left;
+	clear:none;
+	background-color:rgba(255,255,255,1);
+	cursor:pointer;
+	  -webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+    margin: 3em auto;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+        
+    .contactus-container{
+        width: 90%;
+        height: 80vh;
+        display: block;
+        float: left;
+        clear: none;
+        margin: -10em 5% 10em;
+        position: relative;
+        z-index: 10;
+    }
+    
+    
+    
+    .cc-left{
+          display: grid; 
+      grid-auto-rows: 1fr; 
+      grid-template-columns: 1fr; 
+      grid-template-rows: 1fr 1fr 1fr; 
+      gap: 2em 2em; 
+      grid-template-areas: 
+        "."
+        "."
+        "."; 
+        width: 25%;
+        height: 100%;
+        float: left;
+        clear: none;
+        margin: 0;
+    }
+    
+    
+    
+    .ccl{
+        background-color: white;
+        height: calc(100% - 4em);
+        width: calc(100% - 4em);
+        display: block;
+        float: left;
+        clear: none;
+        padding: 2em;
+        cursor: pointer;
+        font-size: .9em;
+    }
+    
+    
+    .ccl i{
+        font-size: 3.5em;
+        margin: .5em 0em;
+        color: #E00000;
+    }
+    
+    .ccl span{
+        font-size: .6em;
+        font-weight: 300;
+    }
+    
+    
+    .cc-right{
+        display: block;
+        float: right;
+        clear: none;
+        width: calc(75% - 2em);
+        height: 100%;
+        margin: 0;
+        background-color: white;
+    }
+    
+    
+    
+    
+    .pdfread{
+         width: 60%;
+        height: auto;
+        display: block;
+        clear: none;
+    }
+    
+    
+    
+    .pdfread object{
+        width: 100%;
+        height: 100vh;
+    }
+    
+    
+    .pplogos{
+         width: 20%;
+        height: 60vh;
+        float: left;
+        clear: none;
+        top: 15%;
+        position: sticky;
+       display: grid; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0em 2em; 
+  grid-template-areas: 
+    ". ."; 
+        padding: 2em;
+        background-color: white;
+        margin: 0;
+    }
+    
+    
+    .pplogos img{
+        height: auto;
+        width: auto;
+        display: block;
+        clear: none;
+        margin: 1em auto;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .areasofservice{
+        width: 90%;
+        height: auto;
+        float: left;
+        clear: none;
+        background: none;
+       display: block;
+       margin: 0vh 5% 5vh;
+    }
+    
+    
+    .areasofservice h3{
+        font-weight: 700;    
+    }
+    
+    
+    
+    .aos-arranged{
+        display: grid; 
+      grid-auto-rows: 1fr; 
+      grid-template-columns: 1fr 1fr 1fr 1fr; 
+      gap: 2em 2em; 
+        margin: 5vh auto 0;
+        width: 100%;
+        height: auto;
+    }
+    
+    
+    
+    
+    .areasofservice .aos{
+        height: calc(35vh - 4em);
+        display: block;
+        float: left;
+        clear: none;
+        background-color: white;
+        position: relative;
+        padding: 2em;
+        width: calc(100% - 4em)
+    }
+    
+    
+    
+    .aos i{
+        font-size: 5em;
+        margin: .5em;
+        color: #E00000;
+    }
+    
+    .aos img{
+        height: 7em;
+        clear: both;
+        display: block;
+        float: left;
+        margin: 2em 1em;
+    }
+    
+    
+    .aos h4{
+        color: black;
+        font-size: 1.3em;
+        line-height: 1.2em;
+    }
+    
+    
+    
+    
+    
+    
+    
+      
+    .workdifferent{
+        width: 90%;
+        height: auto;
+        float: left;
+        clear: none;
+        background: none;
+       display: block;
+       margin: 10vh 5% 25vh;
+        position: relative;
+
+    }
+ 
+    
+    
+    .wd-right{
+        width: 100%;
+        height: 60vh;
+        display: block;
+        float: left;
+        clear: none;
+        background-color: white;
+        position: relative;
+        z-index: 0;
+              /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+        padding-bottom: 5vh;
+    }
+    
+    
+
+    
+    
+    
+    .wdr{
+        width: 40%;
+        height: auto;
+        display: block;
+        float: right;
+    }
+    
+    
+    .wdr p{
+        clear: both;
+        font-family: 'Montserrat', sans-serif;
+        display: block;
+    }
+    
+    
+    .wdr .redstroke{
+        margin-left: 0;
+        float: left;
+    }
+    
+    
+    .wdr ul{
+        width: 100%;
+        height: auto;
+        display: block;
+        clear: both;
+        
+    }
+    
+    .wdr ul li{
+        list-style: none;
+        font-family: 'Montserrat', sans-serif;
+        border: solid 1px;
+        line-height: 3em;
+        display: block;
+        clear: none;
+        padding: auto 2em;
+        border-width: 0 0 1px 0px;
+    }
+    
+    .wdr li span{
+        font-weight: 500;
+    }
+    
+    
+    
+    
+}
+    
+    
+    /* Desktop Layout:1080px to a max of 1440px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1440px) {
+	
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+    
+        /* Desktop Layout: 1440px to a max of 1920px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1920px) {
+    
+    
+    
+    .pagename-sus{
+        background-color: #024F49;
+    }
+
+    
+    
+    .ot-head{
+        width: 100%;
+        height: auto;
+        min-height: 50vh;
+        display: block;
+        float: left;
+        clear: none;
+        margin: 0 0 10vh 0;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    
+    
+    
+    .tech-top-bg{
+        background-image: url("../img/serverroom.png");
+    }
+    
+    
+    
+    .ot-head .oth-inner{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        float: left;
+        clear: none;
+        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,.2) 100%);
+        z-index: 0;
+    }
+
+    
+    
+    .oth-inner-sus{
+         position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        float: left;
+        clear: none;
+        z-index: 0;
+        background: linear-gradient(90deg, rgba(2,79,73,1) 0%, rgba(2,79,73,.2) 100%);
+    }
+    
+    
+    
+    
+    .oth-left{
+        width: 40%;
+        display: block;
+        float: left;
+        clear: none;
+    }
+    
+    
+    
+    .oth-inner h2{
+        color: #fff;
+        border:none;
+        display: block;
+        float: left;
+        clear: both;
+        margin: 25vh 5vw 2vh;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 5em;
+    }
+    
+    
+    
+    .oth-inner h3{
+        color: #fff;
+        border:none;
+        display: block;
+        float: left;
+        clear: both;
+        margin: 5vh 5vw 2vh;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3em;
+        font-weight: 700;
+
+    }
+    
+    
+    .oth-inner p{
+        color: white;
+        display: block;
+        float: left;
+        clear: both;
+        margin: auto 5vw 10vh;
+    }
+    
+    
+    .redstroke{
+        background-color: #E00000;
+        height: .2em;
+        width: 15em;
+        display: block;
+        float: left;
+        clear: both;
+        border: 0;
+        margin: 0vh 5vw 2vh;
+    }
+    
+    
+    
+    
+    .ot-down{
+        width: calc(90% - 4em);
+        display: block;
+        float: left;
+        clear: none;
+        height: auto;
+        padding: 2em;
+        background-color: white;
+        margin: -13vh 5% 10vh;
+        border-radius: .5em;
+        z-index: 10;
+        position: relative;
+        line-height: 2em;
+    }
+    
+    b{
+        font-weight: bold;
+        line-height: 2em;
+    }
+    
+    
+    
+    .ot-down .redstroke,.ot-floatright .redstroke{
+        float: left;
+        margin-left: 0;
+    }
+    
+    
+    .otd-left{
+        width: 25%;
+        float: left;
+        clear: none;
+        display: block;
+        margin: 0;
+    }
+    
+    
+    
+    .otd-right{
+        width: calc(70% - 4em);
+        float: right;
+        clear: none;
+        display: block;
+        margin: 0;
+        padding: 2em;
+        line-height: 1.5em;
+    }
+    
+    
+    .otd-r-d{
+        width: 100%;
+         display: grid; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 2em 2em; 
+  grid-template-areas: 
+    ". . ."; 
+        clear: both;
+        height: auto;
+    }
+    
+    
+    
+    .otd-r-d-div{
+        display: block;
+        padding: 1.5em 2em 2em;
+        height: auto;
+        border: 1px solid;
+        border-color: darkgray;
+        width: calc(100% - 4em);
+        margin: 0em auto;
+    }
+    
+    .otd-r-d-div #base{
+        font-size: .8em;
+        letter-spacing: 1px;
+        opacity: .7;
+    }
+    
+    
+    
+    
+    .ot-floatright{
+        position:sticky;
+        width: 40%;
+        display: block;
+        float: right;
+        clear: both;
+        background-color: white;
+        right: 5%;
+        left: auto;
+        top: 15vh;
+        z-index: 100;
+        margin-top: -45vh ;
+        padding: 4em 4em 5em;
+        overflow: hidden;
+        height: 50vh;
+        margin-bottom: 10vh;
+    }
+    
+    
+    .ot-floatright h3{
+        font-weight: 700;
+    }
+    
+    
+    
+    .ot-floatright .big-o-red{
+        position: absolute;
+        bottom: -10em;
+        right: -10em;
+        height: 25em;
+    }
+    
+    
+    
+    
+    
+    .certification{
+        width: 90%;
+        height: auto;
+        display: block;
+        
+    }
+    
+
+    
+
+    
+  .container-certification{
+        width: 100%;
+        height: auto;
+          display: block; 
+        clear: none;;
+        float: left;
+   -webkit-column-count: 6;
+  -webkit-column-gap:   5em;
+  -moz-column-count:    6;
+  -moz-column-gap:      5em;
+  column-count:         6;
+  column-gap:           5em;  
+}
+
+    
+.container-certification img{
+	width: 100% !important;
+  height: auto !important;
+	opacity:1;
+	float:left;
+	clear:none;
+	background-color:rgba(255,255,255,1);
+	cursor:pointer;
+	  -webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+    margin: 3em auto;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
+    .contactus-container{
+        width: 90%;
+        height: 80vh;
+        display: block;
+        float: left;
+        clear: none;
+        margin: -10em 5% 10em;
+        position: relative;
+        z-index: 10;
+    }
+    
+    
+    
+    .cc-left{
+          display: grid; 
+      grid-auto-rows: 1fr; 
+      grid-template-columns: 1fr; 
+      grid-template-rows: 1fr 1fr 1fr; 
+      gap: 2em 2em; 
+      grid-template-areas: 
+        "."
+        "."
+        "."; 
+        width: 25%;
+        height: 100%;
+        float: left;
+        clear: none;
+        margin: 0;
+    }
+    
+    
+    
+    .ccl{
+        background-color: white;
+        height: calc(100% - 4em);
+        width: calc(100% - 4em);
+        display: block;
+        float: left;
+        clear: none;
+        padding: 2em;
+        cursor: pointer;
+        font-size: .9em;
+    }
+    
+    
+    .ccl i{
+        font-size: 3.5em;
+        margin: .5em 0em;
+        color: #E00000;
+    }
+    
+    .ccl span{
+        font-size: .6em;
+        font-weight: 300;
+    }
+    
+    
+    .cc-right{
+        display: block;
+        float: right;
+        clear: none;
+        width: calc(75% - 2em);
+        height: 100%;
+        margin: 0;
+        background-color: white;
+    }
+    
+    
+    
+    
+        
+    .pdfread{
+         width: 60%;
+        height: auto;
+        display: block;
+        clear: none;
+    }
+    
+    
+    
+    .pdfread object{
+        width: 100%;
+        height: 100vh;
+    }
+    
+    
+    .pplogos{
+         width: 20%;
+        height: 60vh;
+        float: left;
+        clear: none;
+        top: 15%;
+        position: sticky;
+       display: grid; 
+  grid-auto-rows: 1fr; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0em 2em; 
+  grid-template-areas: 
+    ". ."; 
+        padding: 2em;
+        background-color: white;
+        margin: 0;
+    }
+    
+    
+    .pplogos img{
+        height: auto;
+        width: auto;
+        display: block;
+        clear: none;
+        margin: 1em auto;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .areasofservice{
+        width: 80%;
+        height: auto;
+        float: left;
+        clear: none;
+        background: none;
+       display: block;
+       margin: -5vh 10% 5vh;
+    }
+    
+    
+    .areasofservice h3{
+        font-weight: 700;    
+    }
+    
+    
+    
+    .aos-arranged{
+        display: grid; 
+      grid-auto-rows: 1fr; 
+      grid-template-columns: 1fr 1fr 1fr 1fr; 
+      gap: 2em 2em; 
+        margin: 5vh auto 0;
+        width: 100%;
+        height: auto;
+    }
+    
+    
+    
+    
+    .areasofservice .aos{
+        height: calc(35vh - 4em);
+        display: block;
+        float: left;
+        clear: none;
+        background-color: white;
+        position: relative;
+        padding: 2em;
+        width: calc(100% - 4em)
+    }
+    
+    
+    
+    .aos i{
+        font-size: 5em;
+        margin: .5em;
+        color: #E00000;
+    }
+    
+    
+    .aos img{
+        height: 7em;
+        clear: both;
+        display: block;
+        float: left;
+        margin: 2em 1em;
+    }
+    
+    
+    
+    .aos h4{
+        color: black;
+         font-size: 1.8em;
+        line-height: 1.2em;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .workdifferent{
+        width: 80%;
+        height: auto;
+        float: left;
+        clear: none;
+        background: none;
+       display: block;
+       margin: 10vh 10% 25vh;
+        position: relative;
+    }
+ 
+    
+    
+    .wd-right{
+        width: 100%;
+        height: 60vh;
+        display: block;
+        float: left;
+        clear: none;
+        background-color: white;
+        position: relative;
+        z-index: 0;
+              /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    
+    
+
+    
+    
+    
+    .wdr{
+        width: 40%;
+        height: auto;
+        display: block;
+        float: right;
+    }
+    
+    
+    .wdr p{
+        clear: both;
+        font-family: 'Montserrat', sans-serif;
+        display: block;
+    }
+    
+    
+    .wdr .redstroke{
+        margin-left: 0;
+        float: left;
+    }
+    
+    
+    .wdr ul{
+        width: 100%;
+        height: auto;
+        display: block;
+        clear: both;
+        
+    }
+    
+    .wdr ul li{
+        list-style: none;
+        font-family: 'Montserrat', sans-serif;
+        border: solid 1px;
+        line-height: 3em;
+        display: block;
+        clear: none;
+        padding: auto 2em;
+        border-width: 0 0 1px 0px;
+    }
+    
+    .wdr li span{
+        font-weight: 500;
+    }
+    
+    
+}
+
+
+
+
+
+
+            /* Desktop Layout: 1920px to a max of 2400px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 2400px) {
+	
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+		
+}

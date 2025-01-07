@@ -1,0 +1,1761 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		6;
+	dw-num-cols-tablet:		10;
+	dw-num-cols-desktop:	14;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+
+    
+    
+    
+    .casespage{
+       background-color: #46525B;
+    }
+    
+    
+    .casespage .logotext-seen{
+        color: #fff;
+    }
+    
+    
+    .casespage .pagename{
+        color: #fff;
+    }
+    
+    
+    
+    .cases-container{
+        width: 85%;
+        height: auto;
+        display: block;
+        float: left;
+        margin: 20vh 7.5% auto;
+        padding: 0;
+        clear: both;
+        
+    }
+    
+    
+    
+    .case-logo-icon{
+        height: 3.5em;
+        width: 3.5em;
+        float: left;
+        clear: none;
+        display: block;
+        float: left;
+        background-position: center;
+        background-size: cover;
+        border-radius: 1em;
+        margin: auto 1em 4em auto;
+        margin: auto 1em 4em auto;
+    }
+    
+    
+    
+    .cases-top{
+        display: block;
+        float: left;
+        clear: none;
+        color: #46525B;
+        width: 90%;
+        color: #fff;
+    }
+    
+    
+    .cases-top h2{
+        font-size: 3em;
+        font-weight: 600;
+        line-height: .9em;
+        margin: 0 auto .4em 0em ;
+        width: calc(100% - 5em);
+        float: left;
+        clear: none;
+        color: #fff;
+        
+    }
+    
+    .cases-top p{
+        clear: both;
+        width: 100%;
+    }
+    
+    
+    
+    
+    .cases-container .watchshowreel{
+        margin: 0vh 10% 0 0;
+        color: #fff;
+        display: none;
+    }
+    
+    
+    .cases-container i, .cases-container:hover i{
+        color: #fff;
+    }
+    
+    
+    
+
+    
+    
+    .cases-container .howwdoit{
+        width: calc(100% + 7.5vw);
+        height: auto;
+        display: block;
+        float: left;
+        clear: none;
+        position: relative;
+        color: #fff;
+        margin: 10vh auto auto;
+    }
+    
+    
+  
+    
+    .cases-container .hwd-left{
+        width: 100%;
+        height: auto;
+        float: left;
+        clear: none;
+        display: block;
+        line-height: 1.5em;
+    }
+    
+    
+    .cases-container .hwd-centre{
+        width: 90%;
+        height: auto;
+        display: block;
+        clear: none;
+        float: left;
+         display: grid; 
+      grid-auto-columns: 1fr; 
+      grid-template-columns: 1fr 1fr; 
+      grid-template-rows: 1fr 1fr; 
+      gap: 0em 0em; 
+      grid-template-areas: 
+        ". ."
+        ". ."; 
+        margin-left: 0%;
+}
+    
+    
+    .cases-container .hc-inner{
+       
+        width: 100%;
+        height: auto;
+    }
+    
+    
+    
+    .cases-container .hwd-centre p{
+        opacity: .6;
+    }
+    
+    
+    .cases-container .hwd-centre div{
+        padding: 3em 2em;
+        border: solid .2px;
+        border-color: rgba(186,186,186,.3);
+        display: block;
+        float: left;
+        clear: none;
+        height: 20vh;
+        width: auto;
+        margin: 0;
+        
+    }
+    
+    
+    .cases-container .hwd-right{
+        width: 90%;
+        height: 60vh;
+        float: left;
+        clear: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+        position: relative;
+        top: auto;
+        border-radius: 0em;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    
+    
+    
+    
+    
+    .p-slide-img-animation{
+        
+    }
+    
+    
+    
+    
+    
+    
+    .job-container {  
+        display: block;
+        height: auto;
+        clear: both;
+        float: left;
+        margin: 10vh auto 5vh;
+}
+    
+    
+
+    .left {  
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr;
+          gap: 2em 2em;
+          grid-auto-flow: row;
+          grid-template-areas:
+            "."
+            ".";
+          grid-area: left;
+          clear: both;
+          float: left;
+            height: 100vh;
+        width: 100%;
+        
+    }
+
+
+
+    .right {  
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1.5fr 0.5fr;
+          gap: 2em 2em;
+          grid-auto-flow: row;
+          grid-template-areas:
+            "."
+            ".";
+          grid-area: right;
+          clear: both;
+          float: left;
+        height: 100vh;
+        margin: 3em auto auto auto;
+    }
+
+    
+    
+    
+    .show{
+        background-position: center;
+        background-size: cover;
+        border-radius: 1em;
+        background-color: #4F5C66;
+        /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+        overflow: hidden;
+    }
+    
+    
+    .show video{
+        height: 100%;
+        width: auto;
+        display: block;
+        float: left;
+        clear: both;
+    }
+    
+    
+    .show1{
+        
+    } 
+    
+    
+    
+    .clientquote{
+        /* From https://css.glass */
+background: rgba(79, 92, 102, 0.65);
+border-radius: 16px;
+backdrop-filter: blur(10.6px);
+-webkit-backdrop-filter: blur(10.6px);
+border: 2px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    
+    
+    .clientquote .inner{
+        width: 80%;
+        height: auto;
+        display: block;
+        float: left;
+        color: #fff;
+    }
+    
+    
+    .clientquote .inner p{
+        margin-top: 1em;
+        opacity: .5;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .sw-cases{
+        width: 100%;
+          width: 100%;
+          display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 2em 1em; 
+  grid-template-areas: 
+    "."
+ 
+      ; 
+        margin: 8vh auto;
+        
+        float: left;
+        clear: both;
+        
+    }
+    
+    
+    .sw-case{
+        border-radius: 1em;
+        height: 45vh;
+        display: block;
+        float: left;
+        clear: none;
+        background-size: cover;
+        background-position: center;
+        transition: all .4s;
+        cursor: pointer;
+        overflow: hidden;
+        margin: 1.5em 0;
+    }
+    
+    
+    
+    .sw-case:hover{
+        box-shadow: -1px 14px 52px -6px rgba(52,61,68,0.8);
+        -webkit-box-shadow: -1px 14px 52px -6px rgba(52,61,68,0.8);
+        -moz-box-shadow: -1px 14px 52px -6px rgba(52,61,68,0.8);
+    }
+    
+    
+    
+    .sw-case .ch-inner{
+        width: calc(100% - 10%);
+        height: calc(100% - 20%);
+        display: block;
+        float: left;
+        clear: none;
+        background: rgb(70,82,91);
+        background: -webkit-linear-gradient(bottom left, rgba(70,82,91,1) 30%, rgba(70,82,91,0) 100%);
+        background: -o-linear-gradient(bottom left, rgba(70,82,91,1) 30%, rgba(70,82,91,0) 100%);
+        background: linear-gradient(to top right, rgba(70,82,91,1) 30%, rgba(70,82,91,0) 100%);
+        padding: 5%;
+        color: #fff;
+        line-height: 1.5em;
+        position: relative;
+    }
+    
+    
+    
+    .sw-case  .ch-inner{
+        width: calc(100% - 10%);
+        padding: 5%;
+        height: 100%;
+    }
+    
+ 
+    
+    .sw-case .ch-ico{
+        height: 4em;
+        width: 4em;
+        display: block;
+        float: left;
+        background-position: center;
+        background-size: cover;
+        border-radius: .75em;
+    }
+    
+    
+    
+    .sw-case .ch-details{
+        width: 90%;
+        display: block;
+        float: left;
+        clear: none;
+        position: absolute;
+        bottom: 15%;
+        left: 5%;
+        height: auto;
+         
+    }
+    
+    
+    .sw-case .ch-details h4{
+        clear: both;
+        margin: auto auto 1em;
+    }
+    
+    .sw-case .ch-details p{
+        margin: 1em auto;
+        clear: both;
+        transition: all .4s;
+        height: 0;
+        font-size: 0;
+        opacity: 0;
+        margin-bottom: 3em;
+    }
+    
+    
+    .sw-case:hover .ch-details p{
+        font-size: 1em;
+        height: auto;
+        opacity: 1;
+        margin-bottom: .5em;
+    }
+    
+    
+    
+    
+    .casemore{
+        background-color: white;
+        color: #46525B;
+        padding: 7em 3em;
+        height: calc(65vh - 14em);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .nextcase{
+        width: 100vw;
+        height: auto;
+        display: block;
+        float: left;
+        clear: both;
+        margin: 5em -9% auto;
+        background-color: #Fff;
+    }
+    
+    
+    
+    
+    .nextcase .inner{
+        width: 85%;
+        height: auto;
+        display: block;
+        float: left;
+        clear: none;
+        margin: 2em 7.5%;
+    }
+    
+    
+    .nextcase button{
+         background-color: #EDEDED;
+        margin: 1em auto auto auto;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+	
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+	
+	
+	
+
+    
+    
+    .cases-container .howwdoit{
+        width: calc(100% + 7.5vw);
+        height: auto;
+        display: block;
+        float: left;
+        clear: none;
+        position: relative;
+        color: #fff;
+        margin: 10vh auto auto;
+    }
+    
+    
+  
+    
+    .cases-container .hwd-left{
+        width: 100%;
+        height: auto;
+        float: left;
+        clear: none;
+        display: block;
+        line-height: 1.5em;
+    }
+    
+    
+    .cases-container .hwd-centre{
+        width: 90%;
+        height: auto;
+        display: block;
+        clear: none;
+        float: left;
+         display: grid; 
+      grid-auto-columns: 1fr; 
+      grid-template-columns: 1fr 1fr; 
+      grid-template-rows: 1fr 1fr; 
+      gap: 0em 0em; 
+      grid-template-areas: 
+        ". ."
+        ". ."; 
+        margin-left: 0%;
+}
+    
+    
+    .cases-container .hc-inner{
+       
+        width: 100%;
+        height: auto;
+    }
+    
+    
+    
+    .cases-container .hwd-centre p{
+        opacity: .6;
+    }
+    
+    
+    .cases-container .hwd-centre div{
+        padding: 3em 2em;
+        border: solid .2px;
+        border-color: rgba(186,186,186,.3);
+        display: block;
+        float: left;
+        clear: none;
+        height: 20vh;
+        width: auto;
+        margin: 0;
+        
+    }
+    
+    
+    .cases-container .hwd-right{
+        width: 90%;
+        height: 60vh;
+        float: left;
+        clear: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+        position: relative;
+        top: auto;
+        border-radius: 0em;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+	
+
+	
+	
+	
+}
+
+
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+    
+    
+    
+    
+    
+    
+    .casespage{
+       background-color: #46525B;
+    }
+    
+    
+    .casespage .logotext-seen{
+        color: #fff;
+    }
+    
+    
+    .casespage .pagename{
+        color: #fff;
+    }
+    
+    
+    
+     .cases-container{
+        width: 85%;
+        height: auto;
+        display: block;
+        float: left;
+        margin: 20vh 7.5% auto;
+        padding: 0;
+        clear: both;
+        
+    }
+    
+    
+    
+    .case-logo-icon{
+        height: 3.5em;
+        width: 3.5em;
+        float: left;
+        clear: none;
+        display: block;
+        float: left;
+        background-position: center;
+        background-size: cover;
+        border-radius: 1em;
+        margin: auto 1em 4em auto;
+        margin: auto 1em 4em auto;
+    }
+    
+    
+    
+    .cases-top{
+        display: block;
+        float: left;
+        clear: none;
+        color: #46525B;
+        width: 90%;
+        color: #fff;
+    }
+    
+    
+    .cases-top h2{
+        font-size: 3em;
+        font-weight: 600;
+        line-height: .9em;
+        margin: 0 auto .4em 0em ;
+        width: calc(100% - 5em);
+        float: left;
+        clear: none;
+        color: #fff;
+        
+    }
+    
+    .cases-top p{
+        clear: both;
+        width: 100%;
+    }
+    
+    
+    
+    
+    .cases-container .watchshowreel{
+        margin: 0vh 10% 0 0;
+        color: #fff;
+        display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+    }
+    
+    
+    .cases-container i, .cases-container:hover i{
+        color: #fff;
+    }
+    
+    
+    
+    
+
+    
+    
+    .cases-container .howwdoit{
+        width: calc(100% + 7.5vw);
+        height: auto;
+        display: block;
+        float: left;
+        clear: none;
+        position: relative;
+        color: #fff;
+        margin: 20vh auto auto;
+    }
+    
+    
+  
+    
+    .cases-container .hwd-left{
+        width: 100%;
+        height: auto;
+        float: left;
+        clear: none;
+        display: block;
+        line-height: 1.5em;
+    }
+    
+    
+    .cases-container .hwd-centre{
+        width: 45%;
+        height: auto;
+        display: block;
+        clear: none;
+        float: left;
+         display: grid; 
+      grid-auto-columns: 1fr; 
+      grid-template-columns: 1fr 1fr; 
+      grid-template-rows: 1fr 1fr; 
+      gap: 0em 0em; 
+      grid-template-areas: 
+        ". ."
+        ". ."; 
+        margin-left: 0%;
+}
+    
+    
+    .cases-container .hc-inner{
+       
+        width: 100%;
+        height: auto;
+    }
+    
+    
+    
+    .cases-container .hwd-centre p{
+        opacity: .6;
+    }
+    
+    
+    .cases-container .hwd-centre div{
+        padding: 3em 2em;
+        border: solid .2px;
+        border-color: rgba(186,186,186,.3);
+        display: block;
+        float: left;
+        clear: none;
+        height: 20vh;
+        width: auto;
+        margin: 0;
+        
+    }
+    
+    
+    .cases-container .hwd-right{
+        width: 55%;
+        height: calc(60vh + 1.5em);
+        float: right;
+        clear: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+        position: relative;
+        top: auto;
+        border-radius: 0em;
+    }
+    
+    
+    
+    
+    
+    
+    .p-slide-img-animation{
+        
+    }
+    
+    
+    
+    
+    
+    
+    .job-container {  
+        display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-auto-columns: 1fr;
+      grid-auto-rows: 1fr;
+      gap: 3em 3em;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "left right";
+        height: 150vh;
+        clear: both;
+        float: left;
+        margin: 10vh auto 5vh;
+}
+    
+    
+
+    .left {  
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr;
+          gap: 3em 0em;
+          grid-auto-flow: row;
+          grid-template-areas:
+            "."
+            ".";
+          grid-area: left;
+          clear: both;
+          float: left;
+         height: 100%;
+    }
+
+
+
+    .right {  
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1.5fr 0.5fr;
+          gap: 3em 0em;
+          grid-auto-flow: row;
+          grid-template-areas:
+            "."
+            ".";
+          grid-area: right;
+          clear: both;
+          float: left;
+        height: 100%;
+        margin: auto;
+    }
+
+    
+    
+    
+    .show{
+        background-position: center;
+        background-size: cover;
+        border-radius: 2em;
+        background-color: #4F5C66;
+        /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+        overflow: hidden;
+    }
+    
+    
+    .show video{
+        height: 100%;
+        width: auto;
+        display: block;
+        float: left;
+        clear: both;
+    }
+    
+    
+    .show1{
+        
+    } 
+    
+    
+    
+    .clientquote{
+        /* From https://css.glass */
+background: rgba(79, 92, 102, 0.65);
+border-radius: 16px;
+backdrop-filter: blur(10.6px);
+-webkit-backdrop-filter: blur(10.6px);
+border: 2px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    
+    
+    .clientquote .inner{
+        width: 80%;
+        height: auto;
+        display: block;
+        float: left;
+        color: #fff;
+    }
+    
+    
+    .clientquote .inner p{
+        margin-top: 1em;
+        opacity: .5;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .sw-cases{
+        width: 100%;
+          display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0em 3em; 
+  grid-template-areas: 
+    ". . ."; 
+        margin: 8vh auto;
+        float: left;
+        clear: both;
+        
+    }
+    
+    
+    .sw-case{
+        border-radius: 1em;
+        height: 65vh;
+        display: block;
+        float: left;
+        clear: none;
+        background-size: cover;
+        background-position: center;
+        transition: all .4s;
+        cursor: pointer;
+        overflow: hidden;
+        margin: 1.5em 0;
+    }
+    
+    
+    
+    .sw-case:hover{
+        box-shadow: -1px 14px 52px -6px rgba(52,61,68,0.8);
+        -webkit-box-shadow: -1px 14px 52px -6px rgba(52,61,68,0.8);
+        -moz-box-shadow: -1px 14px 52px -6px rgba(52,61,68,0.8);
+    }
+    
+    
+    
+    .sw-case .ch-inner{
+        width: calc(100% - 10%);
+        height: calc(100% - 20%);
+        display: block;
+        float: left;
+        clear: none;
+        background: rgb(70,82,91);
+        background: -webkit-linear-gradient(bottom left, rgba(70,82,91,1) 30%, rgba(70,82,91,0) 100%);
+        background: -o-linear-gradient(bottom left, rgba(70,82,91,1) 30%, rgba(70,82,91,0) 100%);
+        background: linear-gradient(to top right, rgba(70,82,91,1) 30%, rgba(70,82,91,0) 100%);
+        padding: 5%;
+        color: #fff;
+        line-height: 1.5em;
+        position: relative;
+    }
+    
+    
+    
+    .sw-case  .ch-inner{
+        width: calc(100% - 10%);
+        padding: 5%;
+        height: 100%;
+    }
+    
+ 
+    
+    .sw-case .ch-ico{
+        height: 4em;
+        width: 4em;
+        display: block;
+        float: left;
+        background-position: center;
+        background-size: cover;
+        border-radius: .75em;
+    }
+    
+    
+    
+    .sw-case .ch-details{
+        width: 90%;
+        display: block;
+        float: left;
+        clear: none;
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+        height: auto;
+         
+    }
+    
+    
+    .sw-case .ch-details h4{
+        clear: both;
+        margin: auto auto 1em;
+    }
+    
+    .sw-case .ch-details p{
+        margin: 1em auto;
+        clear: both;
+        transition: all .4s;
+        height: 0;
+        font-size: 0;
+        opacity: 0;
+        margin-bottom: 3em;
+    }
+    
+    
+    .sw-case:hover .ch-details p{
+        font-size: 1em;
+        height: auto;
+        opacity: 1;
+        margin-bottom: .5em;
+    }
+    
+    
+    
+    
+    .casemore{
+        background-color: white;
+        color: #46525B;
+        padding: 7em 3em;
+        height: calc(65vh - 14em);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .nextcase{
+        width: 100vw;
+        height: auto;
+        display: block;
+        float: left;
+        clear: both;
+        margin: 5em -9% auto;
+        background-color: #Fff;
+    }
+    
+    
+    
+    
+    .nextcase .inner{
+        width: 85%;
+        height: auto;
+        display: block;
+        float: left;
+        clear: none;
+        margin: 2em 7.5%;
+    }
+    
+    
+    .nextcase button{
+         background-color: #EDEDED;
+        margin: 1em auto auto auto;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+    /* Desktop Layout: 769px to a max of 1080px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1080px) {
+	
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+    
+    
+    /* Desktop Layout:1080px to a max of 1440px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1440px) {
+	
+    
+    .casespage{
+       background-color: #46525B;
+    }
+    
+    
+    .casespage .logotext-seen{
+        color: #fff;
+    }
+    
+    
+    .casespage .pagename{
+        color: #fff;
+    }
+    
+    
+    
+    .cases-container{
+        width: 85%;
+        height: auto;
+        display: block;
+        float: left;
+        margin: 25vh 7.5% auto;
+        padding: 0;
+        clear: both;
+        
+    }
+    
+    
+    
+    .case-logo-icon{
+        height: 5em;
+        width: 5em;
+        float: left;
+        clear: none;
+        display: block;
+        float: left;
+        background-position: center;
+        background-size: cover;
+        border-radius: 1em;
+        margin: auto auto 4em auto;
+    }
+    
+    
+    
+    .cases-top{
+        display: block;
+        float: left;
+        clear: none;
+        color: #46525B;
+        width: 60%;
+        color: #fff;
+    }
+    
+    
+    .cases-top h2{
+        font-size: 7em;
+        font-weight: 600;
+        line-height: .9em;
+        margin: auto auto .4em;
+        width: 70%;
+        float: left;
+        clear: both;
+        color: #BABABA;
+        
+    }
+    
+    .cases-top p{
+        clear: both;
+        width: 100%;
+    }
+    
+    
+    
+    
+    .cases-container .watchshowreel{
+        margin: 0vh 10% 0 0;
+        color: #fff;
+    }
+    
+    
+    .cases-container i, .cases-container:hover i{
+        color: #fff;
+    }
+    
+    
+    
+
+    
+    
+    .cases-container .howwdoit{
+        width: calc(100% + 7.5vw);
+        height: auto;
+        display: block;
+        float: left;
+        clear: none;
+        position: relative;
+        color: #fff;
+        margin: 20vh auto auto;
+    }
+    
+    
+  
+    
+    .cases-container .hwd-left{
+        width: 15%;
+        height: auto;
+        float: left;
+        clear: none;
+        display: block;
+        line-height: 1.5em;
+    }
+    
+    
+    .cases-container .hwd-centre{
+        width: 30%;
+        height: auto;
+        display: block;
+        clear: none;
+        float: left;
+         display: grid; 
+      grid-auto-columns: 1fr; 
+      grid-template-columns: 1fr 1fr; 
+      grid-template-rows: 1fr 1fr; 
+      gap: 0em 0em; 
+      grid-template-areas: 
+        ". ."
+        ". ."; 
+        margin-left: 5%;
+}
+    
+    
+    .cases-container .hc-inner{
+       
+        width: 100%;
+        height: auto;
+    }
+    
+    
+    
+    .cases-container .hwd-centre p{
+        opacity: .6;
+    }
+    
+    
+    .cases-container .hwd-centre div{
+        padding: 3em 2em;
+        border: solid .2px;
+        border-color: rgba(186,186,186,.3);
+        display: block;
+        float: left;
+        clear: none;
+        height: 20vh;
+        width: auto;
+        margin: 0;
+        
+    }
+    
+    
+    .cases-container .hwd-right{
+        width: 45%;
+        height: 60vh;
+        float: right;
+        clear: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+        position: relative;
+        top: auto;
+        border-radius: 1em;
+    }
+    
+    
+    
+    
+    
+    
+    .p-slide-img-animation{
+        
+    }
+    
+    
+    
+    
+    
+    
+    .job-container {  
+        display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-auto-columns: 1fr;
+      grid-auto-rows: 1fr;
+      gap: 3em 3em;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "left right";
+        height: 150vh;
+        clear: both;
+        float: left;
+        margin: 20vh auto 30vh;
+}
+    
+    
+
+    .left {  
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr;
+          gap: 3em 0em;
+          grid-auto-flow: row;
+          grid-template-areas:
+            "."
+            ".";
+          grid-area: left;
+          clear: both;
+          float: left;
+        height: 100%;
+        width: 100%;
+    }
+
+
+
+    .right {  
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1.5fr 0.5fr;
+          gap: 3em 0em;
+          grid-auto-flow: row;
+          grid-template-areas:
+            "."
+            ".";
+          grid-area: right;
+          clear: both;
+          float: left;
+        height: 100%;
+        width: 100%;
+    }
+
+    
+    
+    
+    .show{
+        background-position: center;
+        background-size: cover;
+        border-radius: 2em;
+        background-color: #4F5C66;
+        /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+        overflow: hidden;
+    }
+    
+    
+    .show video{
+        height: 100%;
+        width: auto;
+        display: block;
+        float: left;
+        clear: both;
+    }
+    
+    
+    .show1{
+        
+    } 
+    
+    
+    
+    .clientquote{
+        /* From https://css.glass */
+background: rgba(79, 92, 102, 0.65);
+border-radius: 16px;
+backdrop-filter: blur(10.6px);
+-webkit-backdrop-filter: blur(10.6px);
+border: 2px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    
+    
+    .clientquote .inner{
+        width: 80%;
+        height: auto;
+        display: block;
+        float: left;
+        color: #fff;
+    }
+    
+    
+    .clientquote .inner p{
+        margin-top: 1em;
+        opacity: .5;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .sw-cases{
+        width: 100%;
+          display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0em 3em; 
+  grid-template-areas: 
+    ". . ."; 
+        margin: 8vh auto;
+        float: left;
+        clear: both;
+        
+    }
+    
+    
+    .sw-case{
+        border-radius: 1em;
+        height: 65vh;
+        display: block;
+        float: left;
+        clear: none;
+        background-size: cover;
+        background-position: center;
+        transition: all .4s;
+        cursor: pointer;
+        overflow: hidden;
+        margin: 1.5em 0;
+    }
+    
+    
+    
+    .sw-case:hover{
+        box-shadow: -1px 14px 52px -6px rgba(52,61,68,0.8);
+        -webkit-box-shadow: -1px 14px 52px -6px rgba(52,61,68,0.8);
+        -moz-box-shadow: -1px 14px 52px -6px rgba(52,61,68,0.8);
+    }
+    
+    
+    
+    .sw-case .ch-inner{
+        width: calc(100% - 10%);
+        height: calc(100% - 20%);
+        display: block;
+        float: left;
+        clear: none;
+        background: rgb(70,82,91);
+        background: -webkit-linear-gradient(bottom left, rgba(70,82,91,1) 30%, rgba(70,82,91,0) 100%);
+        background: -o-linear-gradient(bottom left, rgba(70,82,91,1) 30%, rgba(70,82,91,0) 100%);
+        background: linear-gradient(to top right, rgba(70,82,91,1) 30%, rgba(70,82,91,0) 100%);
+        padding: 5%;
+        color: #fff;
+        line-height: 1.5em;
+        position: relative;
+    }
+    
+    
+    
+    .sw-case  .ch-inner{
+        width: calc(100% - 10%);
+        padding: 5%;
+        height: 100%;
+    }
+    
+ 
+    
+    .sw-case .ch-ico{
+        height: 4em;
+        width: 4em;
+        display: block;
+        float: left;
+        background-position: center;
+        background-size: cover;
+        border-radius: .75em;
+    }
+    
+    
+    
+    .sw-case .ch-details{
+        width: 90%;
+        display: block;
+        float: left;
+        clear: none;
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+        height: auto;
+         
+    }
+    
+    
+    .sw-case .ch-details h4{
+        clear: both;
+        margin: auto auto 1em;
+    }
+    
+    .sw-case .ch-details p{
+        margin: 1em auto;
+        clear: both;
+        transition: all .4s;
+        height: 0;
+        font-size: 0;
+        opacity: 0;
+        margin-bottom: 3em;
+    }
+    
+    
+    .sw-case:hover .ch-details p{
+        font-size: 1em;
+        height: auto;
+        opacity: 1;
+        margin-bottom: .5em;
+    }
+    
+    
+    
+    
+    .casemore{
+        background-color: white;
+        color: #46525B;
+        padding: 7em 3em;
+        height: calc(65vh - 14em);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .nextcase{
+        width: 100vw;
+        height: auto;
+        display: block;
+        float: left;
+        clear: both;
+        margin: 5em -9% auto;
+        background-color: #Fff;
+    }
+    
+    
+    
+    
+    .nextcase .inner{
+        width: 85%;
+        height: auto;
+        display: block;
+        float: left;
+        clear: none;
+        margin: 2em 7.5%;
+    }
+    
+    
+    .nextcase button{
+         background-color: #EDEDED;
+        margin: 1em auto auto auto;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+    
+}
+    
+        /* Desktop Layout: 1440px to a max of 1920px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1920px) {
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+
+            /* Desktop Layout: 1920px to a max of 2400px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 2400px) {
+	
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+		
+}

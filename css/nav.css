@@ -1,0 +1,1520 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		6;
+	dw-num-cols-tablet:		10;
+	dw-num-cols-desktop:	14;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+	
+
+    
+    .top{
+        position: fixed;
+        float: left;
+        clear: none;
+        z-index: 100000;
+        width: 90%;
+        height: auto;
+        top: 1em;
+        left: 5%;
+    }
+    
+    
+    
+    .logo{
+        width: auto;
+        display: block;
+        float: left;
+        clear: none;
+        margin: 0;
+        padding: 0;
+        transition: all .3s;
+        transform-origin: center;
+    }
+    
+    .logo-normal{
+        height: 10vh;
+    }
+    
+    
+    .logo-small{
+        height: 5vh;
+    }
+    
+    
+    
+    
+    .logoicon{
+        width: auto;
+        height: 100%;
+        display: inline;
+        float: left;
+        clear: none;
+        background-position: center left;
+        background-repeat: no-repeat;
+        background-image: url("../img/ByRaeLogo.svg");
+        background-size: contain;
+        
+    }
+    
+    
+    .logotext{
+        float: left;
+        clear: none;
+         /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+        height: 100%;
+        width: auto;
+        margin: auto 1em auto;
+    }
+    
+    
+    .logo .logotext h4{
+        font-weight: 700;
+        float: left;
+        font-family: "Quicksand", sans-serif;
+        font-optical-sizing: auto;
+        color: #46525B;
+        margin: 0;
+        padding: 0;
+        transition: all .5s;
+        font-size: 0em;
+    }
+    
+    
+    .logo .logotext .pagename{
+        font-size: 0em;
+        font-weight: 500;
+    }
+    
+    
+    .logotext-seen{
+        font-size: 1.15em;
+        transition: all .5s;
+    }
+    
+    
+    .logotext-off{
+        font-size: 0em;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .nav{
+        position: absolute;
+        right: 0;
+        float: right;
+        display: block;
+        height: auto;
+        width: auto;
+        
+    }
+    
+    
+    .navbar{
+        height: auto;
+        display: block;
+        float: right;
+        position: fixed;
+        z-index: 110;
+        clear: none;
+        border-radius: 3em;
+           /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+        font-weight: 400;
+      color: #46525B;
+        /* From https://css.glass */
+background: rgba(255, 255, 255, 0.95);
+box-shadow: 0 15px 30px rgba(5, 214, 208, .2);
+backdrop-filter: blur(6.1px);
+-webkit-backdrop-filter: blur(6.1px);
+border: 0px solid rgba(255, 255, 255, 0.97);
+        transition: all .4s;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        margin-top: ;
+        right: 5%;
+        top: 1em;
+        bottom: auto;
+    }
+    
+    
+    .navbar:hover{
+        box-shadow: 0 20px 30px rgba(5, 214, 208, .4);
+        background: rgba(255, 255, 255, 1);
+    }
+    
+    
+    
+    .navbar button{
+        background:transparent;
+        border:none;
+        font-family: "Quicksand", sans-serif;
+        padding:.8em 1em;
+        opacity: .8;
+        transition: all .3s;
+        cursor: pointer;
+    }
+    
+    
+    .navbar button:hover{
+        opacity: 1;
+    }
+    
+    
+    .navbar button:nth-of-type(1) i{
+        margin-right: .3em;
+        font-size: 1em;
+        /*transform: rotate(90deg)*/
+    }
+    
+    
+     .navbar button:nth-of-type(2) i{
+        margin-left: .3em;
+        font-size: .9em;
+    }
+    
+    
+    .navbar-line {
+        height: 1.5em;
+        width: 1px;
+        background-color: #46525B;
+        opacity: .6;
+        display: block;
+        float: left;
+        clear: none;
+        border-radius: 1em;
+    }
+    
+ 
+    
+    .navbar span{
+        display: none;
+    }
+    
+    
+    
+
+
+
+
+
+    
+    .spline{
+        width: 1px;
+        display: none;
+        position: fixed;
+        z-index: 20;
+        height: 100vh;
+        background-color: rgba(70,82,91,.4);
+        overflow: visible;
+        top: 0;
+        right: 5%;
+    }
+    
+    
+    
+    
+    .spline-circle1{
+        width: 1em;
+        height: 1em;
+        background: -webkit-linear-gradient(bottom left, #06C3D1 0%, #03FFCF 100%);
+            background: -o-linear-gradient(bottom left, #06C3D1 0%, #03FFCF 100%);
+            background: linear-gradient(to top right, #06C3D1 0%, #03FFCF 100%);
+        border-radius: 1em;
+        display: block;
+        float: left;
+        clear: none;
+        position: absolute;
+        top: 30%;
+        left: calc(-.5em + .5px);
+        filter: blur(5px);
+        animation: scmove1 4s ease-in-out infinite;
+    }
+    
+    
+    
+    
+    @keyframes scmove1 {
+      	0% {
+		transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-120px);
+        }
+        
+        
+        100% {
+		transform: translateY(0);
+        }
+        
+ }
+
+    
+    
+    
+        
+    .spline-circle2{
+        width: 2em;
+        height: 2em;
+        background: -webkit-linear-gradient(bottom left, #06C3D1 0%, #03FFCF 100%);
+            background: -o-linear-gradient(bottom left, #06C3D1 0%, #03FFCF 100%);
+            background: linear-gradient(to top right, #06C3D1 0%, #03FFCF 100%);
+        border-radius: 2em;
+        display: block;
+        float: left;
+        clear: none;
+        position: absolute;
+        top: 70%;
+        left: calc(-1em + .5px);
+        filter: blur(10px);
+        animation: scmove1 7s ease-in-out infinite;
+        animation-delay: .3s;
+        animation-direction: reverse;
+    }
+    
+    
+    
+    
+    
+
+
+
+
+.contactpopup{
+    width: 25%;
+    height: 80vh;
+    display: none;
+    float: left;
+    clear: none;
+    position: fixed;
+    top: 10em;
+    right: 5%;
+    background-color: white;
+    z-index: 0;
+    border-radius: 2em;
+}
+
+
+
+
+.navpopup{
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    float: left;
+    clear: none;
+    position: fixed;
+    z-index:1000;
+    border-radius: 1em 0 0 1em;
+    overflow: hidden;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 15px 30px rgba(5, 214, 208, .2);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    border: solid 1.5px #fff;
+    transform-origin: right;
+    transition: all .4s;
+    top: 0em;
+    right: -100vw;
+}
+
+
+
+.navpopup-opened{
+    right: 0;
+}
+
+
+.navpopup-closed{
+    right: -100vw;
+}
+
+
+.navpopup button{
+    margin: 1em 1.5em 0;
+}
+
+
+.navpopup button i{
+    font-size: .9em;
+    margin-right: 1em;
+    margin-left: 0;
+}
+
+.navpopup .navbox{
+    width: calc(100% - 5em);
+    height: calc(80%);
+    margin: 1em 2.5em;
+    display: block;
+    float: left;
+    clear: none;
+    background-color: 
+}
+
+.subnav{
+    width: 100%;
+    float: left;
+    clear: none;
+      display: block; 
+      grid-template-columns: 1fr 1fr 1fr; 
+      grid-template-rows: 1fr 1fr; 
+      gap: 0em 0em; 
+      grid-template-areas: 
+    ". . ."
+    ". . ."; 
+    height: 80%;
+    
+}
+
+.subnav div{
+    width: calc(100% - 6em);
+    height: calc(auto - 0);
+    display: block;
+    float: left;
+    clear: none;
+    cursor: pointer;
+    padding: 3em 0;
+    color: #fff;
+    position: relative;
+    opacity: .7;
+    transition: all .4s;
+    transition-delay: 0;
+}  
+
+.subnav div:hover{
+    opacity: 1;
+}
+
+.subnav div h4{
+    width: 70%;
+    margin: .5em 0;
+    line-height: 1.1em;
+}
+
+
+.subnav div i{
+      background: #fff;
+        background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 4em;
+        rotate: -45deg;
+        position: absolute;
+        bottom: .4em;
+        right: .4em;
+        opacity: .5;
+        display: none;
+}
+
+
+
+.subnav div:nth-child(1){
+    background-color: transparent;
+}
+
+
+
+.subnav div:nth-child(2){
+    background-color: transparent;
+}
+
+
+
+.subnav div:nth-child(3){
+    background-color: transparent;
+}
+
+
+
+.subnav div:nth-child(4){
+    background-color: transparent;
+}
+
+
+
+.subnav div:nth-child(5){
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contactus{
+    width: 100%;
+    height: 25vh;
+    border-radius: 1em;
+    position: absolute;
+    bottom: 0em;
+    left: 1.5em;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.0);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: solid 1.5px #fff;
+    display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 2fr; 
+  grid-template-rows: 1fr; 
+  gap: 0em 2em; 
+  grid-template-areas: 
+    ". ."; 
+    overflow: hidden;
+}
+
+
+
+.contactus iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+	
+	
+	
+	
+	
+	
+    
+    
+    
+    
+    
+    
+    
+    
+    
+	
+
+	
+	
+	
+}
+
+
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+    
+    .top{
+        position: fixed;
+        float: left;
+        clear: none;
+        z-index: 100000;
+        width: 85%;
+        height: auto;
+        top: 2em;
+        left: 7.5%;
+    }
+    
+    
+    
+    
+    .logo-normal{
+        height: 10vh;
+    }
+    
+    
+    .logo-small{
+        height: 6vh;
+    }
+    
+
+    
+    
+    
+    .navbar{
+        height: auto;
+        display: block;
+        float: right;
+        position: fixed;
+        z-index: 110;
+        clear: none;
+        border-radius: 3em;
+           /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+        font-weight: 400;
+      color: #46525B;
+        /* From https://css.glass */
+background: rgba(255, 255, 255, 0.95);
+box-shadow: 0 15px 30px rgba(5, 214, 208, .2);
+backdrop-filter: blur(6.1px);
+-webkit-backdrop-filter: blur(6.1px);
+border: 0px solid rgba(255, 255, 255, 0.97);
+        transition: all .4s;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        top: 1.5em;
+        right: 7.5%;
+        bottom: auto;
+    }
+    
+    
+    .navbar:hover{
+        box-shadow: 0 20px 30px rgba(5, 214, 208, .4);
+        background: rgba(255, 255, 255, 1);
+    }
+    
+    
+    .navbar button{
+        background:transparent;
+        border:none;
+        font-family: "Quicksand", sans-serif;
+        padding: 1.1em 1.5em;
+        opacity: .8;
+        transition: all .3s;
+        cursor: pointer;
+        display: block;
+    }
+    
+    
+    .navbar button:hover{
+        opacity: 1;
+    }
+    
+    
+    .navbar button:nth-of-type(1) i{
+        margin-right: 1em;
+        font-size: 1.4em;
+        /*transform: rotate(90deg)*/
+    }
+    
+    
+     .navbar button:nth-of-type(2) i{
+        margin-left: 1em;
+        font-size: 1.1em;
+    }
+    
+    
+    .navbar button i{
+       padding: 0;
+        display: inline-block;
+    }
+    
+    
+    .navbar button:hover i{
+       
+    }
+    
+    
+    .navbar-line{
+        height: 1.5em;
+        width: 1px;
+        background-color: #46525B;
+        opacity: .6;
+        display: block;
+        float: left;
+        clear: none;
+        border-radius: 1em;
+    }
+    
+    
+    .navbar span{
+         display: inline-block;
+    }
+    
+    
+    
+    
+    
+    
+    
+    .spline{
+        width: 1px;
+        display: block;
+        position: fixed;
+        z-index: 20;
+        height: 100vh;
+        background-color: rgba(70,82,91,.4);
+        overflow: visible;
+        top: 0;
+        right: calc(5.5% + 8.8em);
+    }
+    
+    
+    
+
+
+    .navpopup{
+        width: 85vw;
+        height: 100vh;
+        display: block;
+        float: left;
+        clear: none;
+        position: fixed;
+        z-index:1000;
+        border-radius: 1em 0 0 1em;
+        overflow: hidden;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.7);
+        box-shadow: 0 15px 30px rgba(5, 214, 208, .2);
+        backdrop-filter: blur(40px);
+        -webkit-backdrop-filter: blur(40px);
+        border: solid 1.5px #fff;
+        transform-origin: right;
+        transition: all .4s;
+        top: 0em;
+        right: -85vw;
+    }
+
+
+
+    .navpopup-opened{
+        right: 0;
+    }
+
+
+    .navpopup-closed{
+        right: -85vw;
+    }
+
+
+    .navpopup button{
+        margin: 1.5em 2.5em 0;
+    }
+
+
+    .navpopup button i{
+        font-size: 1.1em;
+        margin-right: 1em;
+        margin-left: 0;
+    }
+
+
+
+    .navpopup .navbox{
+        width: calc(100% - 5em);
+        height: calc(80%);
+        margin: 1em 2.5em;
+        display: block;
+        float: left;
+        clear: none;
+        background-color: ;
+    }
+
+
+
+    
+    
+    
+.subnav{
+    width: 100%;
+    float: left;
+    clear: none;
+      display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 0em 0em; 
+  grid-template-areas: 
+    ". . ."
+    ". . ."; 
+    height: 80%;
+    
+}
+
+
+.subnav div{
+    width: calc(100% - 4em);
+    height: calc(100% - 4em);
+    display: block;
+    float: left;
+    clear: none;
+    cursor: pointer;
+    padding: 2em;
+    color: #fff;
+    position: relative;
+    opacity: .7;
+    transition: all .4s;
+    transition-delay: 0;
+}  
+
+
+.subnav div:hover{
+    opacity: 1;
+}
+
+
+
+.subnav div h4{
+    width: 70%;
+    margin: .5em 0;
+    line-height: 1.1em;
+}
+
+
+.subnav div i{
+      background: #fff;
+        background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 4em;
+        rotate: -45deg;
+        position: absolute;
+        bottom: .4em;
+        right: .4em;
+        opacity: .5;
+    display: block;
+}
+
+
+
+.subnav div:nth-child(1){
+    background-color: #53626C;
+}
+
+
+
+.subnav div:nth-child(2){
+    background-color: rgba(83,98,108,.82);
+}
+
+
+
+.subnav div:nth-child(3){
+    background-color: rgba(78,92,102,.88);
+}
+
+
+
+.subnav div:nth-child(4){
+    background-color: rgba(78,92,102,.57);
+}
+
+
+
+.subnav div:nth-child(5){
+    background-color: #53626C;
+}
+
+
+    
+    
+    
+    
+    
+    
+  
+    
+    
+}
+    /* Desktop Layout: 769px to a max of 1080px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1080px) {
+	
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+    
+    
+    /* Desktop Layout:1080px to a max of 1440px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1440px) {
+
+    
+    
+    
+    .top{
+        position: fixed;
+        float: left;
+        clear: none;
+        z-index: 100000;
+        width: 85%;
+        height: auto;
+        top: 2em;
+        left: 7.5%;
+    }
+    
+    
+    
+    .logo{
+        
+        width: auto;
+        display: block;
+        float: left;
+        clear: none;
+        margin: 0;
+        padding: 0;
+        transition: all .3s;
+        transform-origin: center;
+    }
+    
+    .logo-normal{
+        height: 12vh;
+    }
+    
+    
+    .logo-small{
+        height: 8vh;
+    }
+    
+    
+    
+    
+    .logoicon{
+        width: auto;
+        height: 100%;
+        display: inline;
+        float: left;
+        clear: none;
+        background-position: center left;
+        background-repeat: no-repeat;
+        background-image: url("../img/ByRaeLogo.svg");
+        background-size: contain;
+        
+    }
+    
+    
+    .logotext{
+        float: left;
+        clear: none;
+         /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+        height: 100%;
+        width: auto;
+        margin: auto 1em auto;
+    }
+    
+    
+    .logo .logotext h4{
+        font-weight: 700;
+        float: left;
+        font-family: "Quicksand", sans-serif;
+        font-optical-sizing: auto;
+        color: #46525B;
+        margin: 0;
+        padding: 0;
+        transition: all .5s;
+        font-size: 2em;
+    }
+    
+    
+    .logo .logotext .pagename{
+        font-size: .5em;
+        font-weight: 500;
+    }
+    
+    
+    .logotext-seen{
+        font-size: 1.15em;
+        transition: all .5s;
+    }
+    
+    
+    .logotext-off{
+        font-size: 0em;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .nav{
+        position: absolute;
+        right: 0;
+        float: right;
+        display: block;
+        height: auto;
+        width: auto;
+        
+    }
+    
+    
+    .navbar{
+        height: auto;
+        display: block;
+        float: right;
+        position: fixed;
+        z-index: 110;
+        clear: none;
+        border-radius: 3em;
+           /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+        font-weight: 400;
+      color: #46525B;
+        /* From https://css.glass */
+background: rgba(255, 255, 255, 0.95);
+box-shadow: 0 15px 30px rgba(5, 214, 208, .2);
+backdrop-filter: blur(6.1px);
+-webkit-backdrop-filter: blur(6.1px);
+border: 0px solid rgba(255, 255, 255, 0.97);
+        transition: all .4s;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        top: 1.5em;
+        right: 7.5%;
+        bottom: auto;
+    }
+    
+    
+    .navbar:hover{
+        box-shadow: 0 20px 30px rgba(5, 214, 208, .4);
+        background: rgba(255, 255, 255, 1);
+    }
+    
+    
+    
+    .navbar button{
+        background:transparent;
+        border:none;
+        font-family: "Quicksand", sans-serif;
+        padding: 1.1em 1.5em;
+        opacity: .8;
+        transition: all .3s;
+        cursor: pointer;
+        display: block;
+    }
+    
+    
+    .navbar button:hover{
+        opacity: 1;
+    }
+    
+    
+    .navbar button:nth-of-type(1) i{
+        margin-right: 1em;
+        font-size: 1.4em;
+        /*transform: rotate(90deg)*/
+    }
+    
+    
+     .navbar button:nth-of-type(2) i{
+        margin-left: 1em;
+        font-size: 1.1em;
+    }
+    
+    
+    .navbar button i{
+       padding: 0;
+        display: inline-block;
+    }
+    
+    
+    .navbar button:hover i{
+   
+    }
+    
+    
+    .navbar-line{
+        height: 1.5em;
+        width: 1px;
+        background-color: #46525B;
+        opacity: .6;
+        display: block;
+        float: left;
+        clear: none;
+        border-radius: 1em;
+    }
+    
+    
+    .navbar span{
+         display: inline-block;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    .spline{
+        width: 1px;
+        display: block;
+        position: fixed;
+        z-index: 20;
+        height: 100vh;
+        background-color: rgba(70,82,91,.4);
+        overflow: visible;
+        top: 0;
+        right: calc(7.5% + 8.8em);
+    }
+    
+    
+    
+    
+    .spline-circle1{
+        width: 1em;
+        height: 1em;
+        background: -webkit-linear-gradient(bottom left, #06C3D1 0%, #03FFCF 100%);
+        background: -o-linear-gradient(bottom left, #06C3D1 0%, #03FFCF 100%);
+        background: linear-gradient(to top right, #06C3D1 0%, #03FFCF 100%);
+        border-radius: 1em;
+        display: block;
+        float: left;
+        clear: none;
+        position: absolute;
+        top: 30%;
+        left: calc(-.5em + .5px);
+        filter: blur(5px);
+        animation: scmove1 4s ease-in-out infinite;
+    }
+    
+    
+    
+    
+    @keyframes scmove1 {
+        
+      	0% {
+		transform: translateY(0);
+        }
+        
+
+        50% {
+            transform: translateY(-120px);
+        }
+        
+        
+        100% {
+		transform: translateY(0);
+        }
+
+    }
+    
+    
+    
+    
+        
+    .spline-circle2{
+        width: 2em;
+        height: 2em;
+        background: -webkit-linear-gradient(bottom left, #06C3D1 0%, #03FFCF 100%);
+            background: -o-linear-gradient(bottom left, #06C3D1 0%, #03FFCF 100%);
+            background: linear-gradient(to top right, #06C3D1 0%, #03FFCF 100%);
+        border-radius: 2em;
+        display: block;
+        float: left;
+        clear: none;
+        position: absolute;
+        top: 70%;
+        left: calc(-1em + .5px);
+        filter: blur(10px);
+        animation: scmove1 7s ease-in-out infinite;
+        animation-delay: .3s;
+        animation-direction: reverse;
+    }
+    
+    
+    
+    
+    
+
+
+
+
+.contactpopup{
+    width: 25%;
+    height: 80vh;
+    display: none;
+    float: left;
+    clear: none;
+    position: fixed;
+    top: 10em;
+    right: 5%;
+    background-color: white;
+    z-index: 0;
+    border-radius: 2em;
+}
+
+
+
+
+.navpopup{
+    width: 65vw;
+    height: 100vh;
+    display: block;
+    float: left;
+    clear: none;
+    position: fixed;
+    z-index:1000;
+    border-radius: 1em 0 0 1em;
+    overflow: hidden;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 15px 30px rgba(5, 214, 208, .2);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    border: solid 1.5px #fff;
+    transform-origin: right;
+    transition: all .4s;
+    top: 0em;
+    right: -65vw;
+}
+
+
+
+.navpopup-opened{
+    right: 0;
+}
+
+
+.navpopup-closed{
+    right: -65vw;
+}
+
+
+.navpopup button{
+    margin: 1.5em 2.5em 0;
+}
+
+
+.navpopup button i{
+    font-size: 1.1em;
+    margin-right: 1em;
+    margin-left: 0;
+}
+
+
+
+.navpopup .navbox{
+    width: calc(100% - 5em);
+    height: calc(80%);
+    margin: 1em 2.5em;
+    display: block;
+    float: left;
+    clear: none;
+    background-color: ;
+}
+
+
+
+
+
+
+.subnav{
+    width: 100%;
+    float: left;
+    clear: none;
+      display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 0em 0em; 
+  grid-template-areas: 
+    ". . ."
+    ". . ."; 
+    height: 80%;
+    
+}
+
+
+.subnav div{
+    width: calc(100% - 4em);
+    height: calc(100% - 4em);
+    display: block;
+    float: left;
+    clear: none;
+    cursor: pointer;
+    padding: 2em;
+    color: #fff;
+    position: relative;
+    opacity: .7;
+    transition: all .4s;
+    transition-delay: 0;
+}  
+
+
+.subnav div:hover{
+    opacity: 1;
+}
+
+
+
+.subnav div h4{
+    width: 70%;
+    margin: .5em 0;
+    line-height: 1.1em;
+}
+
+
+.subnav div i{
+      background: #fff;
+        background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 4em;
+        rotate: -45deg;
+        position: absolute;
+        bottom: .4em;
+        right: .4em;
+        opacity: .5;
+    display: block;
+}
+
+
+
+.subnav div:nth-child(1){
+    background-color: #53626C;
+}
+
+
+
+.subnav div:nth-child(2){
+    background-color: rgba(83,98,108,.82);
+}
+
+
+
+.subnav div:nth-child(3){
+    background-color: rgba(78,92,102,.88);
+}
+
+
+
+.subnav div:nth-child(4){
+    background-color: rgba(78,92,102,.57);
+}
+
+
+
+.subnav div:nth-child(5){
+    background-color: #53626C;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contactus{
+    width: 100%;
+    height: 25vh;
+    border-radius: 1em;
+    position: absolute;
+    bottom: 0em;
+    left: 1.5em;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.0);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: solid 1.5px #fff;
+    display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 2fr; 
+  grid-template-rows: 1fr; 
+  gap: 0em 2em; 
+  grid-template-areas: 
+    ". ."; 
+    overflow: hidden;
+}
+
+
+
+.contactus iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+}
+    
+        /* Desktop Layout: 1440px to a max of 1920px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1920px) {
+	
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+    
+}
+            /* Desktop Layout: 1920px to a max of 2400px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 2400px) {
+	
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+		
+}

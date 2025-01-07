@@ -1,0 +1,22 @@
+#main_wrapper {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+section {
+padding: 0;
+    
+}
+
+section.fancy {
+  background: cyan;
+    height: 100vh;
+}
+
+
+
+section .animate {
+  width: 100px;
+  height: 100px;
+  background: red;
+}

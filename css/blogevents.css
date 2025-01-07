@@ -1,0 +1,918 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		6;
+	dw-num-cols-tablet:		10;
+	dw-num-cols-desktop:	14;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+
+    
+    
+    .blogpane{
+          display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr ; 
+  grid-template-rows: 1fr; 
+  gap: 2em 2em; 
+  grid-template-areas: 
+    "."; 
+        width: 100%;
+        height: auto;
+        float: left;
+        clear: both;
+    }
+    
+    
+    
+     .blogpane .blog{
+        border-radius: 1.5em;
+        background-color: rgba(255,255,255,.75);
+        cursor: pointer;
+        box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        -webkit-box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        -moz-box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        height: 45vh;
+        width: 100%;
+        transition: all .3s;
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
+         margin: auto auto 1em auto;
+    }
+    
+    
+    .blog .newpost{
+        background-color: rgba(5,214,208,.3);
+        font-family: "Quicksand", sans-serif;
+        padding: .8em 1.4em;
+        border-radius: 1.5em;
+        margin: -1em auto 1em;
+        display: block;
+        float: left;
+        clear: none;
+        font-weight: 600;
+    }
+    
+    
+    .blogpane .blog:hover{
+        box-shadow: -1px 16px 50px -12px rgba(7,180,209,0.7);
+        -webkit-box-shadow: -1px 16px 50px -12px rgba(7,180,209,0.7);
+        -moz-box-shadow: -1px 16px 50px -12px rgba(7,180,209,0.7);
+    }
+    
+    
+    .blogpane .blog .inner{
+        width: 90%;
+        height: 80%;
+        margin: 5%;
+        display: block;
+        float: left;
+        clear: none;
+        color: #46525B;
+    }
+    
+    .blogpane .blog h3{
+        font-weight: 600;
+        line-height: 1.1em;
+    }
+    
+    .blogpane .blog h5{
+        font-weight: 500;
+        margin: 1em auto;
+    }
+    
+    
+    .blogpic{
+        width: 100%;
+        height: 50vh;
+        display: block;
+        float: left;
+        clear: none;
+        background-size: cover;
+        background-position: center;
+        margin: auto auto 5em;
+        border-radius: 1em;
+    }
+    
+    
+    
+    .blogbody{
+        box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        -webkit-box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        -moz-box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        border-radius: 1.5em;
+        padding: 1.5em;
+        background-color: white;
+        display: block;
+        float: left;
+        clear: both;
+        margin: 2.5em auto;
+        width: calc(100% - 3em);
+    }
+    
+    
+    
+    
+    .eventdetails{
+        box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        -webkit-box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        -moz-box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        border-radius: 1.5em;
+        padding: 1.5em;
+        background-color: white;
+        display: block;
+        float: left;
+        clear: both;
+        margin: 2em auto;
+        width: calc(100% - 3em);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .eventpane{
+          display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 2em 2em; 
+  grid-template-areas: 
+    "."; 
+        width: 100%;
+        height: auto;
+        float: left;
+        clear: both;
+    }
+    
+    
+    
+     .eventpane .event{
+        border-radius: 1.5em;
+        background-color: rgba(255,255,255,.75);
+        cursor: pointer;
+        box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        -webkit-box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        -moz-box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        height: 45vh;
+        width: 100%;
+        transition: all .3s;
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
+         margin: auto auto 1em auto;
+    }
+    
+    
+    .event:hover{
+        box-shadow: -1px 16px 50px -12px rgba(7,180,209,0.7);
+        -webkit-box-shadow: -1px 16px 50px -12px rgba(7,180,209,0.7);
+        -moz-box-shadow: -1px 16px 50px -12px rgba(7,180,209,0.7);
+    }
+    
+    .event .location{
+        background-color: rgba(5,214,208,.3);
+        font-family: "Quicksand", sans-serif;
+        padding: .8em 1.4em .8em 1.1em;
+        border-radius: 1.5em;
+        margin: 1em auto 1em;
+        display: block;
+        float: left;
+        clear: none;
+        font-weight: 600;
+        width: auto;
+    }
+    
+    
+    .location i{
+        font-size: 1.2em;
+        margin-right: .2em;
+    }
+    
+    
+    .eventpane .blog:hover{
+        box-shadow: -1px 16px 50px -12px rgba(7,180,209,0.7);
+        -webkit-box-shadow: -1px 16px 50px -12px rgba(7,180,209,0.7);
+        -moz-box-shadow: -1px 16px 50px -12px rgba(7,180,209,0.7);
+    }
+    
+    
+    .eventpane .event .inner{
+        width: 80%;
+        height: 80%;
+        margin: 10%;
+        display: block;
+        float: left;
+        clear: none;
+        color: #46525B;
+    }
+    
+    .eventpane .event h3{
+        font-weight: 600;
+        line-height: 1.1em;
+        display: block;
+        float: left;
+        clear: both;
+        width:100%;
+    }
+    
+    .eventpane .event h5{
+        font-weight: 500;
+        margin: 1em auto;
+    }
+    
+    
+    
+    #time{
+        margin-right: .5em;
+    }
+    
+    #date{
+        margin-left: .5em;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    
+
+
+
+
+
+
+
+
+
+
+	
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+	
+	
+	
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+	
+
+	
+	
+	
+}
+
+
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+    
+    
+    
+    
+    
+    .blogpane{
+          display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 2em 2em; 
+  grid-template-areas: 
+    ". ."; 
+        width: 100%;
+        height: auto;
+        float: left;
+        clear: both;
+    }
+    
+    
+    
+     .blogpane .blog{
+        border-radius: 1.5em;
+        background-color: rgba(255,255,255,.75);
+        cursor: pointer;
+        box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        -webkit-box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        -moz-box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        height: 45vh;
+        width: 100%;
+        transition: all .3s;
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
+         margin: auto auto 1em auto;
+    }
+    
+    
+    .blog .newpost{
+        background-color: rgba(5,214,208,.3);
+        font-family: "Quicksand", sans-serif;
+        padding: .8em 1.4em;
+        border-radius: 1.5em;
+        margin: -1em auto 1em;
+        display: block;
+        float: left;
+        clear: none;
+        font-weight: 600;
+    }
+    
+    
+    .blogpane .blog:hover{
+        box-shadow: -1px 16px 50px -12px rgba(7,180,209,0.7);
+        -webkit-box-shadow: -1px 16px 50px -12px rgba(7,180,209,0.7);
+        -moz-box-shadow: -1px 16px 50px -12px rgba(7,180,209,0.7);
+    }
+    
+    
+    .blogpane .blog .inner{
+        width: 80%;
+        height: 80%;
+        margin: 10%;
+        display: block;
+        float: left;
+        clear: none;
+        color: #46525B;
+    }
+    
+    .blogpane .blog h3{
+        font-weight: 600;
+        line-height: 1.1em;
+    }
+    
+    .blogpane .blog h5{
+        font-weight: 500;
+        margin: 1em auto;
+    }
+    
+    
+    .blogpic{
+        width: 100%;
+        height: 50vh;
+        display: block;
+        float: left;
+        clear: none;
+        background-size: cover;
+        background-position: center;
+        margin: auto auto 5em;
+        border-radius: 1em;
+    }
+    
+    
+    
+    .blogbody{
+        box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        -webkit-box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        -moz-box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        border-radius: 1.5em;
+        padding: 3em;
+        background-color: white;
+        display: block;
+        float: left;
+        clear: both;
+        margin: 2.5em auto;
+        width: 70%;
+    }
+    
+    
+    
+    
+    .eventdetails{
+        box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        -webkit-box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        -moz-box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        border-radius: 1.5em;
+        padding: 3em;
+        background-color: white;
+        display: block;
+        float: left;
+        clear: both;
+        margin: 2.5em auto;
+        width: 40%;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .eventpane{
+          display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 2em 2em; 
+  grid-template-areas: 
+    ". . ."; 
+        width: 100%;
+        height: auto;
+        float: left;
+        clear: both;
+    }
+    
+    
+    
+     .eventpane .event{
+        border-radius: 1.5em;
+        background-color: rgba(255,255,255,.75);
+        cursor: pointer;
+        box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        -webkit-box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        -moz-box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        height: 45vh;
+        width: 100%;
+        transition: all .3s;
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
+         margin: auto auto 1em auto;
+    }
+    
+    
+    .event:hover{
+        box-shadow: -1px 16px 50px -12px rgba(7,180,209,0.7);
+        -webkit-box-shadow: -1px 16px 50px -12px rgba(7,180,209,0.7);
+        -moz-box-shadow: -1px 16px 50px -12px rgba(7,180,209,0.7);
+    }
+    
+    .event .location{
+        background-color: rgba(5,214,208,.3);
+        font-family: "Quicksand", sans-serif;
+        padding: .8em 1.4em .8em 1.1em;
+        border-radius: 1.5em;
+        margin: 1em auto 1em;
+        display: block;
+        float: left;
+        clear: none;
+        font-weight: 600;
+        width: auto;
+    }
+    
+    
+    .location i{
+        font-size: 1.2em;
+        margin-right: .2em;
+    }
+    
+    
+    .eventpane .blog:hover{
+        box-shadow: -1px 16px 50px -12px rgba(7,180,209,0.7);
+        -webkit-box-shadow: -1px 16px 50px -12px rgba(7,180,209,0.7);
+        -moz-box-shadow: -1px 16px 50px -12px rgba(7,180,209,0.7);
+    }
+    
+    
+    .eventpane .event .inner{
+        width: 80%;
+        height: 80%;
+        margin: 10%;
+        display: block;
+        float: left;
+        clear: none;
+        color: #46525B;
+    }
+    
+    .eventpane .event h3{
+        font-weight: 600;
+        line-height: 1.1em;
+        display: block;
+        float: left;
+        clear: both;
+        width:100%;
+    }
+    
+    .eventpane .event h5{
+        font-weight: 500;
+        margin: 1em auto;
+    }
+    
+    
+    
+    #time{
+        margin-right: .5em;
+    }
+    
+    #date{
+        margin-left: .5em;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+    /* Desktop Layout: 769px to a max of 1080px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1080px) {
+	
+  
+    
+    
+    .blogpane{
+          display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 2em 2em; 
+  grid-template-areas: 
+    ". . ."; 
+        width: 100%;
+        height: auto;
+        float: left;
+        clear: both;
+    }
+    
+    
+    
+     .blogpane .blog{
+        border-radius: 1.5em;
+        background-color: rgba(255,255,255,.75);
+        cursor: pointer;
+        box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        -webkit-box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        -moz-box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        height: 45vh;
+        width: 100%;
+        transition: all .3s;
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
+         margin: auto auto 1em auto;
+    }
+    
+    
+    .blog .newpost{
+        background-color: rgba(5,214,208,.3);
+        font-family: "Quicksand", sans-serif;
+        padding: .8em 1.4em;
+        border-radius: 1.5em;
+        margin: -1em auto 1em;
+        display: block;
+        float: left;
+        clear: none;
+        font-weight: 600;
+    }
+    
+    
+    .blogpane .blog:hover{
+        box-shadow: -1px 16px 50px -12px rgba(7,180,209,0.7);
+        -webkit-box-shadow: -1px 16px 50px -12px rgba(7,180,209,0.7);
+        -moz-box-shadow: -1px 16px 50px -12px rgba(7,180,209,0.7);
+    }
+    
+    
+    .blogpane .blog .inner{
+        width: 80%;
+        height: 80%;
+        margin: 10%;
+        display: block;
+        float: left;
+        clear: none;
+        color: #46525B;
+    }
+    
+    .blogpane .blog h3{
+        font-weight: 600;
+        line-height: 1.1em;
+    }
+    
+    .blogpane .blog h5{
+        font-weight: 500;
+        margin: 1em auto;
+    }
+    
+    
+    .blogpic{
+        width: 100%;
+        height: 50vh;
+        display: block;
+        float: left;
+        clear: none;
+        background-size: cover;
+        background-position: center;
+        margin: auto auto 5em;
+        border-radius: 1em;
+    }
+    
+    
+    
+    .blogbody{
+        box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        -webkit-box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        -moz-box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        border-radius: 1.5em;
+        padding: 3em;
+        background-color: white;
+        display: block;
+        float: left;
+        clear: both;
+        margin: 2.5em auto;
+        width: 70%;
+    }
+    
+    
+    
+    
+    .eventdetails{
+        box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        -webkit-box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        -moz-box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        border-radius: 1.5em;
+        padding: 3em;
+        background-color: white;
+        display: block;
+        float: left;
+        clear: both;
+        margin: 2.5em auto;
+        width: 40%;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .eventpane{
+          display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 2em 2em; 
+  grid-template-areas: 
+    ". . ."; 
+        width: 100%;
+        height: auto;
+        float: left;
+        clear: both;
+    }
+    
+    
+    
+     .eventpane .event{
+        border-radius: 1.5em;
+        background-color: rgba(255,255,255,.75);
+        cursor: pointer;
+        box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        -webkit-box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        -moz-box-shadow: -0px 16px 40px -12px rgba(7,180,209,0.25);
+        height: 45vh;
+        width: 100%;
+        transition: all .3s;
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
+         margin: auto auto 1em auto;
+    }
+    
+    
+    .event:hover{
+        box-shadow: -1px 16px 50px -12px rgba(7,180,209,0.7);
+        -webkit-box-shadow: -1px 16px 50px -12px rgba(7,180,209,0.7);
+        -moz-box-shadow: -1px 16px 50px -12px rgba(7,180,209,0.7);
+    }
+    
+    .event .location{
+        background-color: rgba(5,214,208,.3);
+        font-family: "Quicksand", sans-serif;
+        padding: .8em 1.4em .8em 1.1em;
+        border-radius: 1.5em;
+        margin: 1em auto 1em;
+        display: block;
+        float: left;
+        clear: none;
+        font-weight: 600;
+        width: auto;
+    }
+    
+    
+    .location i{
+        font-size: 1.2em;
+        margin-right: .2em;
+    }
+    
+    
+    .eventpane .blog:hover{
+        box-shadow: -1px 16px 50px -12px rgba(7,180,209,0.7);
+        -webkit-box-shadow: -1px 16px 50px -12px rgba(7,180,209,0.7);
+        -moz-box-shadow: -1px 16px 50px -12px rgba(7,180,209,0.7);
+    }
+    
+    
+    .eventpane .event .inner{
+        width: 80%;
+        height: 80%;
+        margin: 10%;
+        display: block;
+        float: left;
+        clear: none;
+        color: #46525B;
+    }
+    
+    .eventpane .event h3{
+        font-weight: 600;
+        line-height: 1.1em;
+        display: block;
+        float: left;
+        clear: both;
+        width:100%;
+    }
+    
+    .eventpane .event h5{
+        font-weight: 500;
+        margin: 1em auto;
+    }
+    
+    
+    
+    #time{
+        margin-right: .5em;
+    }
+    
+    #date{
+        margin-left: .5em;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+    
+    
+    /* Desktop Layout:1080px to a max of 1440px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1440px) {
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+    
+        /* Desktop Layout: 1440px to a max of 1920px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 1920px) {
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+
+            /* Desktop Layout: 1920px to a max of 2400px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 2400px) {
+	
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+		
+}

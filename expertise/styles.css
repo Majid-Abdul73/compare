@@ -1,0 +1,193 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.studios-pane {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.studio {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.studio .inner {
+  position: relative;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.studio h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  padding: 0 15px;
+}
+
+.studio h6 {
+  margin: 0;
+  font-size: 1em;
+  color: #666;
+  padding: 0 15px;
+}
+
+.studio p {
+  padding: 0 15px;
+  color: #333;
+}
+
+.studio a {
+  display: inline-block;
+  margin: 15px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.studio a:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.creatives-pane {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.creative {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.creative .inner {
+  position: relative;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.creative h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  padding: 0 15px;
+}
+
+.creative a {
+  display: inline-block;
+  margin: 15px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.creative a:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.web-designs-pane {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.web-design {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.web-design .inner {
+  position: relative;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.web-design .details {
+  padding: 15px;
+}
+
+.web-design h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+
+.web-design p {
+  color: #666;
+}
+
+.web-design a {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.web-design a:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+

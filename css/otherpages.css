@@ -264,27 +264,12 @@ img, object, embed, video {
         height: 25em;
     }
     
-    
-    
-    
-    
     .certification{
         width: 90%;
         height: auto;
         display: block;
         
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     .container-certification{
         width: 100%;
@@ -301,15 +286,6 @@ img, object, embed, video {
         clear: none;;
         float: left;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
         
     .contactus-container{
         width: 90%;
@@ -322,8 +298,7 @@ img, object, embed, video {
         z-index: 10;
     }
     
-    
-    
+  
     .cc-left{
           display: grid; 
       grid-auto-rows: 1fr; 

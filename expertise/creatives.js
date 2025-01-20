@@ -29,7 +29,7 @@ async function loadCreatives() {
                 <div class="creative">
                     <div class="inner" style="background-image: url('${data.image}')"></div>
                     <h3>${data.title}</h3>
-                    <a href="${data.link}" target="_blank">View Project</a>
+                    <a href="${data.link}" target="_blank">View Pictures</a>
                 </div>
             `;
 

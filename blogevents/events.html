@@ -190,7 +190,7 @@
                         <span class="bl-icon bl-icon-close"><i class="fa-solid fa-arrow-left-long"></i> back</span>
                     </section>
 
-                    <section>
+                    <!-- <section>
                         <div class="bl-box">
                             <h2>Blog and Events</h2>
                         </div>
@@ -213,7 +213,25 @@
                             </div>
                         </div>
                         <span class="bl-icon bl-icon-close"><i class="fa-solid fa-arrow-left-long"></i> back</span>
-                    </section>
+                    </section> -->
+
+                   <!-- events.html -->
+<div class="events-container">
+    <!-- Example event items -->
+    <div class="event-item" data-id="1" data-title="Event 1" data-image="image1.jpg" data-venue="Venue 1" data-date="2024-04-30T10:00:00Z" data-description="Description 1">
+        <h3>Event 1</h3>
+        <p>Short description of Event 1</p>
+    </div>
+    <div class="event-item" data-id="2" data-title="Event 2" data-image="image2.jpg" data-venue="Venue 2" data-date="2024-05-05T14:00:00Z" data-description="Description 2">
+        <h3>Event 2</h3>
+        <p>Short description of Event 2</p>
+    </div>
+    <!-- Add more events as needed -->
+</div>
+
+
+                  
+
 
                     <div class="contactus">
                         <div class="contactdetails">
@@ -302,6 +320,51 @@
             </div>
         </div>
     </section>
+
+<!-- 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const eventLinks = document.querySelectorAll('.event-link');
+          eventLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+              const eventData = {
+                title: link.getAttribute('data-title'),
+                venue_type: link.getAttribute('data-venue_type'),
+                inperson_online: link.getAttribute('data-inperson_online'),
+                time_date: link.getAttribute('data-time_date'),
+                description: link.getAttribute('data-description'),
+                image: link.getAttribute('data-image')
+              };
+              localStorage.setItem('selectedEvent', JSON.stringify(eventData));
+            });
+          });
+        });
+      </script> -->
+
+
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const eventItems = document.querySelectorAll('.event-item');
+            eventItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const eventData = {
+                        id: item.getAttribute('data-id'),
+                        title: item.getAttribute('data-title'),
+                        image: item.getAttribute('data-image'),
+                        venue: item.getAttribute('data-venue'),
+                        date: item.getAttribute('data-date'),
+                        description: item.getAttribute('data-description')
+                    };
+                    console.log('Storing event data:', eventData); // Debugging log
+                    localStorage.setItem('selectedEvent', JSON.stringify(eventData));
+                    
+                    // Navigate to event details page
+                    window.location.href = 'event.html';
+                });
+            });
+        });
+    </script>
+
 
     <!-- Swiper JS -->
     <script src="../swiper-5.2.0/swiper-5.2.0/package/js/swiper.min.js"></script>

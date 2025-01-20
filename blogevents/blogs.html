@@ -65,7 +65,7 @@
         <div class="logotext">
           <h4>
             <span class="logotext-seen">euphrates</span>
-            <span class="pagename"> / blogs</span>
+            <span class="pagename"></span>
           </h4>
         </div>
       </div>
@@ -157,13 +157,6 @@
                     <i class="fa-solid fa-arrow-down-long"></i>
                   </div>
                 </a>
-                <a href="../expertise/pr.html">
-                  <div>
-                    <h4>PR</h4>
-                    <p></p>
-                    <i class="fa-solid fa-arrow-down-long"></i>
-                  </div>
-                </a>
               </div>
             </div>
             <span class="bl-icon bl-icon-close"><i class="fa-solid fa-arrow-left-long"></i> back</span>
@@ -236,7 +229,7 @@
     <div class="shape"></div>
   </div>
 
-  <section class="product-container">
+  <!-- <section class="product-container">
     <div class="pc-top">
       <h2>Blogs</h2>
     </div>
@@ -251,39 +244,35 @@
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
           </div>
         </a>
-      </div>
-      <div class="blog">
-        <a href="blog/blog.html">
-          <div class="inner">
-            <h3>Blog title in full sentence here</h3>
-            <h5>By Ntim Afriyie</h5>
-            <h6>30th April 2024</h6>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
-          </div>
-        </a>
-      </div>
-      <div class="blog">
-        <a href="blog/blog.html">
-          <div class="inner">
-            <h3>Blog title in full sentence here</h3>
-            <h5>By Ntim Afriyie</h5>
-            <h6>30th April 2024</h6>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
-          </div>
-        </a>
-      </div>
-      <div class="blog">
-        <a href="blog/blog.html">
-          <div class="inner">
-            <h3>Blog title in full sentence here</h3>
-            <h5>By Ntim Afriyie</h5>
-            <h6>30th April 2024</h6>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
-          </div>
-        </a>
-      </div>
+      </div> 
     </div>
-  </section>
+  </section> -->
+
+  <section class="product-container">
+    <div class="pc-top">
+        <h2>Blogs</h2>
+    </div>
+    <div class="blogpane">
+        <div class="blog">
+            <a href="blog/blog.html" class="blog-link"
+               data-title="Blog title in full sentence here"
+               data-author="Ntim Afriyie"
+               data-date="2024-04-30"
+               data-content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy."
+               data-image="../../img/samplework.jpg">
+                <div class="inner">
+                    <span class="newpost">New Post</span>
+                    <h3>Blog title in full sentence here</h3>
+                    <h5>By Ntim Afriyie</h5>
+                    <h6>30th April 2024</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+
 
   <section class="footer">
     <div class="f-inner">
@@ -308,6 +297,26 @@
   <!-- Swiper JS -->
   <script src="../swiper-5.2.0/swiper-5.2.0/package/js/swiper.min.js"></script>
 
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const blogLinks = document.querySelectorAll('.blog-link');
+      blogLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+          const blogData = {
+            title: link.getAttribute('data-title'),
+            author: link.getAttribute('data-author'),
+            date: link.getAttribute('data-date'),
+            content: link.getAttribute('data-content'),
+            image: link.getAttribute('data-image')
+          };
+          localStorage.setItem('selectedBlog', JSON.stringify(blogData));
+        });
+      });
+    });
+  </script>
+
+  
   <!-- Initialize Swiper -->
   <script type="module" src="./blog.js"></script>
 

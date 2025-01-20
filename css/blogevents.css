@@ -459,24 +459,22 @@ img, object, embed, video {
     
     #time{
         margin-right: .5em;
-    }
-    
+        }
     #date{
         margin-left: .5em;
-    }
-    
+        }   
 }
  
 @media only screen and (min-width: 1080px) {
 	
     .blogpane{
-          display: grid; 
-  grid-auto-columns: 1fr; 
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 1fr; 
-  gap: 2em 2em; 
-  grid-template-areas: 
-    ". . ."; 
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 2em 2em; 
+        grid-template-areas: 
+        ". . ."; 
         width: 100%;
         height: auto;
         float: left;
@@ -707,7 +705,7 @@ img, object, embed, video {
 
 
 
-
+/* 
 
 .blogpane {
     display: grid;
@@ -785,4 +783,32 @@ img, object, embed, video {
     font-size: 0.9rem;
     line-height: 1.6;
     opacity: 0.9;
+} */
+
+.event .inner {
+    padding: 2em;
+    text-align: left;
+}
+
+.event h3,
+.event h5,
+.event h6,
+.event p,
+.event .location {
+    text-align: left;
+}
+
+
+
+.blog .inner {
+    padding: 2em;
+    text-align: left;
+}
+
+.blog h3,
+.blog h5,
+.blog h6,
+.blog p,
+.blog .location {
+    text-align: left;
 }

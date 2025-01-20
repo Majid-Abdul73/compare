@@ -1,8 +1,5 @@
 @charset "utf-8";
-/* Simple fluid media
-   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
-   http://www.alistapart.com/articles/fluid-images/ 
-*/
+
 img, object, embed, video {
 	max-width: 100%;
 }
@@ -11,28 +8,8 @@ img, object, embed, video {
 	width:100%;
 }
 
-/*
-	Dreamweaver Fluid Grid Properties
-	----------------------------------
-	dw-num-cols-mobile:		6;
-	dw-num-cols-tablet:		10;
-	dw-num-cols-desktop:	14;
-	dw-gutter-percentage:	25;
-	
-	Inspiration from "Responsive Web Design" by Ethan Marcotte 
-	http://www.alistapart.com/articles/responsive-web-design
-	
-	and Golden Grid System by Joni Korpi
-	http://goldengridsystem.com/
-*/
 
 /* Mobile Layout: 480px and below. */
-
-
-    
-    
-    
-    
         .euphratesvideo{
         height: 90vh;
         width: 100vw;
@@ -45,24 +22,17 @@ img, object, embed, video {
         transition: all .3s;
     }
     
-    
-    
     .ev-showvideo{
         top: 0;
         left: 0;
         opacity: 1;
     }
     
-    
-    
-    
     .ev-novideo{
         opacity: 0;
         top: 0vh;
         left: 0;
     }
-    
-    
     
     .agencybody{
         position: absolute;
@@ -137,9 +107,6 @@ border: 0px solid rgba(255, 255, 255, 0.97);
         width: 100%;
     }
     
-    
-    
-    
     .agency-container .watchshowreel{
         margin: 0vh 10% 0 0;
     }
@@ -170,11 +137,6 @@ border: 0px solid rgba(255, 255, 255, 0.97);
         font-weight: 300;
     }
     
-    
-    
-    
-    
-    
     .a-slide{
         width: 100vw;
         height: 60vh;
@@ -185,8 +147,6 @@ border: 0px solid rgba(255, 255, 255, 0.97);
         margin: 5em -7.5vw auto;
     }
     
-    
-    
     .agency-container .h-line{
         height: 20vh;
         width: 1px;
@@ -196,9 +156,6 @@ border: 0px solid rgba(255, 255, 255, 0.97);
         background-color: #46525B;
     }
     
-    
-    
-    
     .mv{
         display: block;
         float: left;
@@ -207,21 +164,11 @@ border: 0px solid rgba(255, 255, 255, 0.97);
         width: 90%;
         height: auto;
     }
-  
     
     .mv h3{
         margin-bottom: .5em;
         color: #46525B;
-    }
-
-
-
-
-    
-    
-    
-    
-    
+    }   
     
     
     .team-container{
@@ -232,10 +179,7 @@ border: 0px solid rgba(255, 255, 255, 0.97);
         margin: 25vh 7.5% 0;
         padding: 0;
         
-    }
-    
-    
-    
+    }    
     
     .tc-top{
         display: block;
@@ -272,23 +216,6 @@ border: 0px solid rgba(255, 255, 255, 0.97);
     }
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     .team{
         width: 100%;
         height: auto;
@@ -304,8 +231,6 @@ border: 0px solid rgba(255, 255, 255, 0.97);
         ". ."; 
         margin: 5em auto;
     }
-    
-    
     
     
     .member{
@@ -347,11 +272,7 @@ background: linear-gradient(133deg, rgba(5,214,208,0) 0%, rgba(7,184,209,0.89959
         
     }
     
-    
 
-    
-    
-    
     .member-pic{
         width: 100%;
         height: 85%;
@@ -370,10 +291,6 @@ background: linear-gradient(133deg, rgba(5,214,208,0) 0%, rgba(7,184,209,0.89959
         transition-delay: .1s;
         overflow: hidden;
     }
-    
-    
-    
-    
     
     .member-details{
         width: 90%;
@@ -423,9 +340,7 @@ background: linear-gradient(133deg, rgba(5,214,208,0) 0%, rgba(7,184,209,0.89959
         background-color: #EEEEEE;
     }
     
-    
-    
-    
+
     .member:hover .member-circle{
         width: 100%;
         height: 100%;
@@ -446,60 +361,17 @@ background: linear-gradient(133deg, rgba(5,214,208,0) 0%, rgba(7,184,209,0.89959
         opacity: 1;
         transition: all .2s;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-  
-    
-    
-
-
-
-
-
-
-
-
-
-
 	
 
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
-
 @media only screen and (min-width: 481px) {
 	
-	
-	
-
-
     
-    
-        .team-container .watchshowreel{
-        margin: 5vh 10% 0 0;
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-	
-
-	
-	
-	
+.team-container .watchshowreel{
+    margin: 5vh 10% 0 0;
 }
-
+    	
+}
 
 
 /* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
@@ -1773,7 +1645,6 @@ background: linear-gradient(133deg, rgba(5,214,208,0) 0%, rgba(7,184,209,0.89959
         margin: .5em auto;
     }
     
-    
     .member-social-ico{
         display: block;
         float: left;
@@ -1785,7 +1656,6 @@ background: linear-gradient(133deg, rgba(5,214,208,0) 0%, rgba(7,184,209,0.89959
         margin: 2em auto auto auto;
     }
     
-    
     .member-social-ico i{
         padding: 1em;
         cursor: pointer;
@@ -1795,15 +1665,11 @@ background: linear-gradient(133deg, rgba(5,214,208,0) 0%, rgba(7,184,209,0.89959
         cursor: pointer;
     }
     
-    
     .member-social-ico i:hover{
         font-size: 1em;
         border-radius: 1em;
         background-color: #EEEEEE;
     }
-    
-    
-    
     
     .member:hover .member-circle{
         width: 100%;
@@ -1819,54 +1685,19 @@ background: linear-gradient(133deg, rgba(5,214,208,0) 0%, rgba(7,184,209,0.89959
         border-radius: 1em;
     }
     
-    
     .member:hover .member-social-ico{
         margin: 0em auto auto auto;
         opacity: 1;
         transition: all .2s;
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    }    
 }
     
-        /* Desktop Layout: 1440px to a max of 1920px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+/* Desktop Layout: 1440px to a max of 1920px.  Inherits styles from: Mobile Layout and Tablet Layout. */
 
-@media only screen and (min-width: 1920px) {
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+@media only screen and (min-width: 1920px) {   
 }
 
-
-
-
-
-
-            /* Desktop Layout: 1920px to a max of 2400px.  Inherits styles from: Mobile Layout and Tablet Layout. */
-
+/* Desktop Layout: 1920px to a max of 2400px.  Inherits styles from: Mobile Layout and Tablet Layout. */
 @media only screen and (min-width: 2400px) {
 	
 

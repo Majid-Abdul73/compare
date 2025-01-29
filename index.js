@@ -36,7 +36,7 @@ async function loadContent() {
         casesSnapshot.forEach((doc) => {
             const data = doc.data();
             const caseHTML = `
-                <div class="case-highlight case-up" style="background-image:url('${data.main_image || 'img/samplework.jpg'}')">
+                <div class="case-highlight case-up" style="background-image:url('${ 'img/samplework.jpg'}')">
                     <div class="ch-inner">
                         <div class="ch-details">
                             <h3>${data.title}</h3>

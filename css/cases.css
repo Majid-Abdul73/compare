@@ -297,31 +297,20 @@ border: 2px solid rgba(255, 255, 255, 0.2);
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
+        
     .sw-cases{
         width: 100%;
-          width: 100%;
-          display: grid; 
-  grid-auto-columns: 1fr; 
-  grid-template-columns: 1fr; 
-  grid-template-rows: 1fr; 
-  gap: 2em 1em; 
-  grid-template-areas: 
-    "."
- 
-      ; 
+        width: 100%;
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 2em 1em; 
+        grid-template-areas: 
+        "."; 
         margin: 8vh auto;
-        
         float: left;
         clear: both;
-        
     }
     
     

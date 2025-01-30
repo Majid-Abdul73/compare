@@ -109,6 +109,8 @@ img, object, embed, video {
     
     
     
+    
+    
     .pc-clientelle{
         width: 100%;
         height: auto;
@@ -130,7 +132,7 @@ img, object, embed, video {
         display: grid; 
   grid-auto-columns: 1fr; 
   grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
   gap: 2em 2em; 
   grid-template-areas: 
     ". . ."
@@ -223,22 +225,7 @@ img, object, embed, video {
         top: auto;
     }
     
-    
-    
-    
-    
-    
-    .p-slide-img-animation{
-        
-    }
-    
-    
-    
-    
-    
-    
-    
-    
+
     .someworks{
         width: 100vw;
         height: auto;
@@ -651,7 +638,7 @@ img, object, embed, video {
         width: calc(100% - 5em);
         height: auto;
         display: inline-block;
-        float: left;
+        /* float: left; */
         clear: none;
         margin: 1em 0 auto 1em;
         
@@ -715,19 +702,7 @@ img, object, embed, video {
     "."
     "."; 
 }
-    
-    
-    
 
-.bigpic-vertical {  }
-
-.bigpic-horizontal { }
-
-.pic3 {  }
-
-.pic4 { }
-
-    
     
     .picture-tile div{
         border-radius: 1em;
@@ -737,18 +712,10 @@ img, object, embed, video {
         width: 100%;
     }
     
-    
-    
-    
-    
-    
-    
-    
+ 
     
     /*Picture Page*/
-    
-    
-    
+ 
     
     /*Video Page*/
     .videobox{
@@ -1058,20 +1025,7 @@ img, object, embed, video {
     }
     
     
-    
-    
-    
-    
-    .p-slide-img-animation{
-        
-    }
-    
-    
-    
-    
-    
-    
-    
+
     
     .someworks{
         width: 100vw;
@@ -1488,7 +1442,7 @@ img, object, embed, video {
         height: 5em;
         width: 5em;
         display: inline-block;
-        float: left;
+        /* float: left; */
         clear: none;
         background-position: center;
         background-size: cover;
@@ -1501,7 +1455,7 @@ img, object, embed, video {
         width: calc(100% - 8em);
         height: auto;
         display: inline-block;
-        float: left;
+        /* float: left; */
         clear: none;
         margin: 1em 0 auto 1em;
         
@@ -1566,7 +1520,7 @@ img, object, embed, video {
     
     
     
-
+/* 
 .bigpic-vertical { }
 
 .bigpic-horizontal { }
@@ -1575,7 +1529,7 @@ img, object, embed, video {
 
 .pic4 {  }
 
-    
+     */
     
     .picture-tile div{
         border-radius: 1em;
@@ -1871,16 +1825,12 @@ img, object, embed, video {
     
     
     
-    
+/*     
     
     .p-slide-img-animation{
         
-    }
-    
-    
-    
-    
-    
+    }   
+     */
     
     
     
@@ -2301,7 +2251,7 @@ img, object, embed, video {
         height: 5.5em;
         width: 5.5em;
         display: inline-block;
-        float: left;
+        /* float: left; */
         background-position: center;
         background-size: cover;
         border-radius: .75em;
@@ -2313,7 +2263,7 @@ img, object, embed, video {
         width: calc(100% - 8em);
         height: auto;
         display: inline-block;
-        float: left;
+        /* float: left; */
         clear: none;
         margin: 1em 0 auto 1em;
         
@@ -2688,11 +2638,11 @@ img, object, embed, video {
     
     
     
-    
+/*     
     .p-slide-img-animation{
         
     }
-    
+     */
     
     
     
@@ -3115,7 +3065,7 @@ img, object, embed, video {
         height: 7em;
         width: 7em;
         display: inline-block;
-        float: left;
+        /* float: left; */
         background-position: center;
         background-size: cover;
         border-radius: .75em;
@@ -3127,7 +3077,7 @@ img, object, embed, video {
         width: calc(100% - 8em);
         height: auto;
         display: inline-block;
-        float: left;
+        /* float: left; */
         clear: none;
         
     }
@@ -3319,4 +3269,74 @@ img, object, embed, video {
     
     
 		
+}
+.loading-indicator {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+}
+
+.loading-indicator i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.error-message {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.no-content {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+    font-style: italic;
+}
+
+/* Enhance existing styles */
+.web-case {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.web-case:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.ch-details h6 {
+    color: #03FEBA;
+    margin-bottom: 0.5rem;
+}
+
+.ch-details h6 span {
+    color: #666;
+    font-weight: normal;
+}
+
+.web-cases {
+    position: relative;
+    min-height: 200px;
+}
+
+.web-cases .loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Quicksand', sans-serif;
+    color: #47525b;
+    font-size: 1.2em;
+}
+
+.web-cases .no-content {
+    text-align: center;
+    padding: 2em;
+    font-family: 'Quicksand', sans-serif;
+    color: #47525b;
+    font-size: 1.2em;
 }

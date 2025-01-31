@@ -28,18 +28,22 @@ async function loadCreatives() {
 
         // Clear content after fade out
         setTimeout(async () => {
-            creativesPane.innerHTML = '';
+            creativesPane.innerHTML = '<div class="web-cases"></div>';
+            const webCases = creativesPane.querySelector('.web-cases');
             
             querySnapshot.forEach((doc) => {
                 const data = doc.data();
                 const creativeDiv = document.createElement('div');
-                creativeDiv.className = 'creative';
+                creativeDiv.className = 'web-case pictures';
+                creativeDiv.style.backgroundImage = `url('${ '../img/samplework.jpg'}')`;
+                
                 creativeDiv.innerHTML = `
-                    <div class="inner" style="background-image: url('${data.image}')">
-                        <div class="overlay">
-                            <h3>${data.title}</h3>
-                            <p>${data.description || ''}</p>
-                            <div class="category">${data.category || ''}</div>
+                    <div class="ch-inner">
+                        <div class="ch-ico" style="background-image: url('${data.icon || '../img/ico-placeholder.png'}')"></div>
+                        <div class="ch-details">
+                            <h6>${data.category || 'Design'}</h6>
+                            <h4>${data.title}</h4>
+                            <button>View Pictures<i class="fa-solid fa-arrow-right-long"></i></button>
                         </div>
                     </div>
                 `;
@@ -49,7 +53,7 @@ async function loadCreatives() {
                     openCreativeDetails(data);
                 });
                 
-                creativesPane.appendChild(creativeDiv);
+                webCases.appendChild(creativeDiv);
             });
             
             // Show content with fade in
@@ -72,63 +76,24 @@ function openCreativeDetails(creativeData) {
 const style = document.createElement('style');
 style.textContent = `
     .creatives-pane {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 2rem;
-        padding: 2rem;
         opacity: 1;
         transition: opacity 0.3s ease-in-out;
     }
     
-    .creative {
+    .web-cases {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+        padding: 2rem;
+    }
+    
+    .web-case {
         cursor: pointer;
         transition: transform 0.3s ease;
     }
     
-    .creative:hover {
+    .web-case:hover {
         transform: scale(1.05);
-    }
-    
-    .creative .inner {
-        position: relative;
-        padding-top: 75%;
-        background-size: cover;
-        background-position: center;
-        border-radius: 8px;
-        overflow: hidden;
-    }
-    
-    .creative .overlay {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding: 1rem;
-        background: rgba(0, 0, 0, 0.7);
-        color: white;
-        transform: translateY(100%);
-        transition: transform 0.3s ease;
-    }
-    
-    .creative:hover .overlay {
-        transform: translateY(0);
-    }
-    
-    .creative h3 {
-        margin: 0 0 0.5rem 0;
-        font-size: 1.2rem;
-    }
-    
-    .creative p {
-        margin: 0;
-        font-size: 0.9rem;
-        opacity: 0.8;
-    }
-    
-    .creative .category {
-        margin-top: 0.5rem;
-        font-size: 0.8rem;
-        opacity: 0.6;
     }
 `;
 

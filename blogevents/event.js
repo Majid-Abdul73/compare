@@ -37,18 +37,27 @@ async function loadEvents() {
         querySnapshot.forEach((doc) => {
             const data = doc.data();
             const date = data.time_date.toDate();
-            const isUpcoming = date > new Date(); // Check if event is in the future
 
             const eventHTML = `
                 <div class="blog">
                     <a href="event.html?id=${doc.id}">
-                        <div class="inner" style="background-image: url('${data.image}')">
-                            ${isUpcoming ? '<span class="newpost">Upcoming</span>' : ''}
-                            <h3>${data.title}</h3>
-                            <h5>${data.venue_type}</h5>
-                            <h6>${formatDate(date)}</h6>
-                            <p>${data.description.substring(0, 100)}...</p>
-                            <span class="event-type ${data.inperson_online}">${data.inperson_online}</span>
+                        <div class="inner">
+                            <div class="event-content">
+                                <h3>${data.title}</h3>
+                                <div class="location-info">
+                                    <span class="location-type ${data.inperson_online?.toLowerCase()}">
+                                        <i class="fa-solid ${data.inperson_online?.toLowerCase() === 'online' ? 'fa-video' : 'fa-location-dot'}"></i>
+                                        ${data.inperson_online || 'TBA'}
+                                    </span>
+                                </div>
+                                <h5>${data.location || 'Location TBA'}</h5>
+                                <div class="event-time">
+                                    <span class="time">${new Date(date).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true }).toLowerCase()}</span>
+                                    <span class="separator">|</span>
+                                    <span class="date">${new Date(date).toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
+                                </div>
+                                <p>${data.description ? data.description.substring(0, 100) + '...' : ''}</p>
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -58,65 +67,7 @@ async function loadEvents() {
         });
 
         // Add CSS for event types
-        const styles = `
-            <style>
-                .event-type {
-                    display: inline-block;
-                    padding: 4px 8px;
-                    border-radius: 4px;
-                    font-size: 12px;
-                    font-weight: 500;
-                    text-transform: uppercase;
-                    margin-top: 10px;
-                }
-                .in-person {
-                    background-color: #e3f2fd;
-                    color: #1976d2;
-                }
-                .online {
-                    background-color: #e8f5e9;
-                    color: #388e3c;
-                }
-                .blog .inner {
-                    background-size: cover;
-                    background-position: center;
-                    padding: 20px;
-                    border-radius: 8px;
-                    min-height: 300px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-end;
-                    position: relative;
-                    overflow: hidden;
-                }
-                .blog .inner::before {
-                    content: '';
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    height: 70%;
-                    background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.8));
-                    z-index: 1;
-                }
-                .blog .inner > * {
-                    position: relative;
-                    z-index: 2;
-                    color: white;
-                }
-                .newpost {
-                    position: absolute;
-                    top: 20px;
-                    right: 20px;
-                    background-color: #ff4081;
-                    color: white;
-                    padding: 4px 8px;
-                    border-radius: 4px;
-                    font-size: 12px;
-                    font-weight: 500;
-                }
-            </style>
-        `;
+        const styles = ``;
         
         if (!document.querySelector('#event-styles')) {
             const styleElement = document.createElement('style');

@@ -36,7 +36,7 @@ async function loadBlogPosts() {
             const blogHTML = `
                 <div class="blog">
                     <a href="blog.html?id=${doc.id}">
-                        <div class="inner" style="background-image: url('${data.image}')">
+                        <div class="inner" style="background-image: url('${"samplework.jpg"}')">
                             ${isNew ? '<span class="newpost">New Post</span>' : ''}
                             <h3>${data.title}</h3>
                             <h5>By ${data.author}</h5>
